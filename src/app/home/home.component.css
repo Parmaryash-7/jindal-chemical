@@ -1,0 +1,14 @@
+.swiper1 {
+
+    p {
+        font-size: --banner-title-font-size;
+    }
+
+    span {
+        color: transparent;
+        background-image: var(--bg-gradient-default);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

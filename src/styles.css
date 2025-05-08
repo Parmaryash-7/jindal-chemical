@@ -150,6 +150,8 @@
     --small-gap-size: 1.5rem;
     --medium-gap-size: 3rem;
     --big-gap-size: 6rem;
+    /*Gradient*/
+    --bg-gradient-defaul: linear-gradient(#f69c25, #ee3956, #ce1972, #5c318c);
 }
 
 /* Custom scrollbar for Webkit browsers (Chrome, Safari) */
@@ -452,6 +454,10 @@ button:focus-visible {
 
 .hide-mobile-only {
     display: block !important;
+}
+
+.d_block {
+    display: block;
 }
 
 .inner-flex {
