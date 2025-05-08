@@ -1,0 +1,549 @@
+/*Table of Contents
+01 body
+02 Helper Classes
+   02-1 short codes
+03 navigation
+   03-1 side menu
+04 owl carousel
+05 revolution slider
+06 page-header
+07 About Us
+   07-1 aboutwrap
+   07-2 work process
+   07-3 Progress Bars
+   07-4 features
+   07-5 img wrapps
+   07-6 background & parallax
+08  our team
+09 gallery portfolio
+10 Counters
+11 pricings
+12 Testimonials
+13 Partner/ Logos
+14 our blog
+   14-1 sidebar
+   14-2 widgets
+15 Ccntact US
+16 footer
+17 preloader
+
+/*Table Of Contents ends */
+
+
+/*Global Styling*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:200,300,400,500,600,700,800');
+
+body {
+   font-family: 'Raleway', sans-serif;
+   color: #777777;
+}
+
+/* Helper Classes & Shorcodes */
+p,
+.heading-title > span,
+.process-wrapp li > .pro-step,
+.progress-bars .progress p,
+.progress-bars .progress .progress-bar span,
+.price-table .ammount .dur,
+.pagination li > a,
+.counters .count_nums,
+.price-table .ammount h2,
+.price-table ul li,
+.webcats li a > span,
+.getin_form .form-control {
+   font-family: 'Open Sans', sans-serif;
+}
+
+.bglight {
+   background: #f6f6f6;
+}
+.bgdefault {
+   background: #00bcd4;
+}
+.whitecolor {
+   color: #ffffff;
+}
+.darkcolor,
+.extradark-color {
+   color: #212331;
+}
+.defaultcolor {
+   color: #c91975;
+}
+.color-one,
+.gradient_color_one,
+.color-three,
+.gradient_color_three,
+.color-five,
+.gradient_color_five {
+   color: #84298c;
+}
+.color-two,
+.gradient_color_two,
+.color-four,
+.gradient_color_four {
+   color: #84298b;
+}
+.gradient_bg_one,
+.gradient_bg_three,
+.gradient_bg_five {
+   background: #9bd230;
+}
+.gradient_bg_two,
+.gradient_bg_four {
+   background: #00bcd4;
+}
+.gradients .gradient_color_one,
+.gradients .gradient_bg_one,
+.gradients .gradient_color_three,
+.gradients .gradient_bg_three, 
+.gradients .gradient_color_five,
+.gradients .gradient_bg_five {
+   background: -webkit-linear-gradient(90deg, #9bd230, #00bcd4);
+   background: -webkit-gradient(linear, left top, right top, color-stop(#9bd230), color-stop(#00bcd4));
+   background: -webkit-linear-gradient(left, #9bd230, #00bcd4);
+   background: -o-linear-gradient(left, #9bd230, #00bcd4);
+   background: linear-gradient(90deg, #9bd230, #00bcd4);
+}
+.gradients .gradient_color_two,
+.gradients .gradient_bg_two,
+.gradients .gradient_color_four,
+.gradients .gradient_bg_four {
+   background: -webkit-linear-gradient(90deg, #00bcd4, #9bd230);
+   background: -webkit-gradient(linear, left top, right top, color-stop(#00bcd4), color-stop(#9bd230));
+   background: -webkit-linear-gradient(left, #00bcd4, #9bd230);
+   background: -o-linear-gradient(left, #00bcd4, #9bd230);
+   background: linear-gradient(91deg, #f6aa1f, #ef4b4d, #e61463, #b3207f, #5a318c);
+}
+
+ul.social-icons li a {
+   color: #676767;
+}
+.hover-effect::before,
+.hover-effect::after,
+ul.social-icons.whitebg li a {
+   background: #fff;
+}
+.back-top,
+.back-top:hover,
+.back-top:focus,
+ul.social-icons li a::before {
+   background: rgb(155 210 48 / 90%);
+   border-radius: 50px;
+}
+.gradients ul.social-icons li a::before {
+   background: -webkit-linear-gradient(90deg, #9bd230 31%, #00bcd4 69%);
+   background: -webkit-gradient(linear, left top, right top, color-stop(31%, #9bd230), color-stop(69%, #00bcd4));
+   background: -webkit-linear-gradient(left, #9bd230 31%, #00bcd4 69%);
+   background: -o-linear-gradient(left, #9bd230 31%, #00bcd4 69%);
+   background: linear-gradient(90deg, #ffe7e2 31%, #ffd0b0 69%);
+}
+
+
+/*-----Buttons-----*/
+
+.btnwhite-hole {
+   background: transparent;
+   border-color: #fff;
+}
+.btnsecondary,
+.btnprimary::after,
+.button.gradient_bg_one::after,
+.button.gradient_bg_three::after,
+.button.gradient_bg_five::after {
+   background: #9bd230;
+}
+.btnsecondary,
+.btnprimary:hover,
+.btnprimary:after {
+   border-color: #9bd230;
+}
+.btnprimary,
+.btnwhite::after,
+.btnsecondary::after,
+.button.gradient_bg_two::after,
+.button.gradient_bg_four::after {
+   background: #ee3557;
+}
+.btnprimary,
+.btnwhite:hover,
+.btnwhite:focus,
+.btnsecondary:hover,
+.btnsecondary:focus {
+   border-color: #00bcd4;
+}
+.btnwhite,
+.btnwhite-hole::after,
+.btnsecondary.hvrwhite::after,
+.btnprimary.hvrwhite::after {
+   background: #fff;
+}
+.btnwhite,
+.btnwhite-hole:hover,
+.btnwhite-hole:focus,
+.btnsecondary.hvrwhite:hover,
+.btnsecondary.hvrwhite:focus,
+.btnprimary.hvrwhite:hover,
+.btnprimary.hvrwhite:focus {
+   border-color: #fff;
+   color: #212331;
+}
+.button.gradient_bg_one,
+.button.gradient_bg_two,
+.button.gradient_bg_three,
+.button.gradient_bg_four,
+.button.gradient_bg_five {
+   border: none;
+}
+.whitecolor.heading-title > span,
+.back-top,
+.back-top:hover, .back-top:focus,
+ul.social-icons.white li a,
+ul.social-icons li a:hover,
+ul.social-icons li a:focus,
+ul.social-icons.white li a:hover,
+ul.social-icons.white li a:focus,
+.button.gradient_bg_one,
+.button.gradient_bg_two,
+.button.gradient_bg_three,
+.button.gradient_bg_four,
+.button.gradient_bg_five,
+.btnwhite-hole,
+.btnwhite:hover, .btnwhite:focus,
+.btnprimary, .btnsecondary,
+.btnprimary:hover,
+.btnprimary:focus,
+.btnsecondary:hover,
+.btnsecondary:focus {
+   color: #fff;
+}
+
+/* ---- Navigation Starts ----- */
+.fixed-bottom, .fixedmenu,
+.center-brand.fixedmenu {
+   background: #fff;
+}
+.darknav .navbar-nav .nav-link,
+.nav-whitecolor .navbar-nav .nav-link {
+   color: #fff;
+}
+.navbar-nav .nav-link,
+.fixedmenu .navbar-nav .nav-link {
+   color: #212331;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.sidebar-nav .navbar-nav .nav-link.active {
+   color: #ee3557;
+}
+.fixedmenu .navbar-nav .nav-link.active,
+.fixedmenu .navbar-nav .nav-link.active:hover,
+.fixedmenu .navbar-nav .nav-link.active:focus,
+.center-brand.fixedmenu .navbar-nav .nav-link.active {
+   background: #ee3557;
+   color: #fff;
+}
+
+.navbar-toggler span,
+.side-menu  {
+   background: #00bcd4;
+}
+.gradients .navbar-toggler span,
+.gradients .side-menu,
+.gradients .center-brand .sidemenu_btn > span,
+.gradients .just-sidemenu .sidemenu_btn > span {
+   background: -webkit-linear-gradient(90deg, #00bcd4, #9bd230);
+   background: -webkit-gradient(linear, left top, right top, color-stop(#00bcd4), color-stop(#9bd230));
+   background: -webkit-linear-gradient(left, #00bcd4, #9bd230);
+   background: -o-linear-gradient(left, #00bcd4, #9bd230);
+   background: linear-gradient(91deg, #f6aa1f, #ef4b4d, #e61463, #b3207f, #5a318c);
+}
+
+/*side clode btn*/
+.side-menu .btn-close::before,
+.side-menu .btn-close::after,
+.nav-whitecolor .sidemenu_btn > span {
+   background: #fff;
+}
+.sidemenu_btn > span {
+   background: #212331;
+}
+.side-nav .navbar-nav .nav-link::after {
+   background: #fff;
+}
+.side-nav .navbar-nav .nav-link.active {
+   background: transparent;
+}
+.side-nav .navbar-nav .nav-link,
+.side-menu .social-icons-simple li a:hover,
+.side-menu .social-icons-simple li a:focus {
+   color: #fff;
+}
+
+/*wrapper on opened sidebar*/
+@media (max-width: 992px) {
+   .boxed-nav {
+      background: #fff;
+   }
+}
+/*---- Navigation Ends ----*/
+
+/*---- OWl Slider & Revolution ----*/
+.owl-dots .owl-dot {
+   background: transparent;
+   border: 1px solid #ce2f81;
+}
+.vertical-dot .owl-dots .owl-dot {
+   background: rgba(255, 255, 255, .5);
+}
+.vertical-dot .owl-dots .owl-dot.active,
+#text-fading .owl-dots .owl-dot {
+   background: #fff;
+}
+.owl-dots .owl-dot::after,
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+   background: #c91975;
+}
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+   color: #fff;
+}
+.tparrows {
+   background: rgba(0, 0, 0, .5);
+}
+.tp-bullet {
+   background: #c91975;
+}
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover,
+.owl-nav .owl-prev:focus,
+.owl-nav .owl-next:focus,
+.tp-bullet:hover, .tp-bullet:focus,
+.tparrows:hover, .tparrows:focus,
+.tp-bullet::before {
+   background: #9bd230;
+}
+.banner-overlay::after {
+   background: rgba(0, 0, 0, .39);
+}
+
+/*-----Revolution Ends-----*/
+
+/*-----Page Headers----- */
+.breadcrumb {
+   background: transparent;
+}
+.breadcrumb .breadcrumb-item:hover,
+.breadcrumb .breadcrumb-item:focus,
+.breadcrumb .breadcrumb-item.active {
+   color: #ca1b75;
+}
+
+/*-----Page Headers -----*/
+
+/*-----Aboutus----- */
+.aboutus-wrapp .about-bordered img {
+   border: 20px solid #f6f6f6;
+}
+
+/* Work Process */
+.process-wrapp li > .pro-step,
+.process-box .pro-step {
+   color: #fff;
+}
+.process-wrapp li > .pro-step.gradient_bg_one::after,
+.process-wrapp li > .pro-step.gradient_bg_three::after,
+.process-wrapp li > .pro-step.gradient_bg_five::after,
+.food-box .price {
+   background: #9bd230;
+}
+body:not(.gradients) .aboutus-wrapp .about-gradient,
+.process-wrapp li > .pro-step.gradient_bg_two::after,
+.process-wrapp li > .pro-step.gradient_bg_four::after,
+body:not(.gradients) .progress-bars .progress .progress-bar {
+   background: #00bcd4;
+}
+
+/*-----Aboutus ends -----*/
+
+
+/*----- Our Team -----*/
+.process-box, .team-box,
+#portfolio_top::before,
+#portfolio_top::after,
+.portfolio-cap,
+.overlay > .plus::before,
+.overlay > .plus::after,
+.fact-iconic h3::after,
+.news_item, .whitebox .widget,
+.price-table,
+.getin_form .form-control,
+.form-check label::before {
+   background: #fff;
+}
+/*filters*/
+.cbp-l-filters .cbp-filter-item span {
+   color: #a5a5a5;
+   border: 1px solid #a5a5a5;
+}
+.cbp-l-filters.whitecolor .cbp-filter-item span {
+   border-color: #fff;
+}
+.cbp-l-filters .cbp-filter-item:hover span {
+   border: 1px solid #9bd230;
+   background: #9bd230;
+}
+.cbp-l-filters .cbp-filter-item-active span,
+.cbp-l-filters .cbp-filter-item:focus span,
+.cbp-l-filters.whitecolor .cbp-filter-item:focus span,
+.cbp-l-filters.whitecolor .cbp-filter-item-active span {
+   border-color: #00bcd4;
+   background: #00bcd4;
+}
+.cbp-l-filters.whitecolor .cbp-filter-item span,
+.cbp-l-filters .cbp-filter-item:hover span,
+.cbp-l-filters .cbp-filter-item-active span,
+.cbp-l-filters .cbp-filter-item:focus span,
+.bg-counter-light .icon-counters:hover .img-icon {
+   color: #fff;
+}
+
+.border-portfolio .cbp-item img {
+   border: 15px solid #fff;
+}
+
+/*Overlays*/
+.overlay {
+   background: rgba(155, 210, 48, .9);
+}
+.overlay.bg-three {
+   background: rgba(0, 187, 212, .9);
+}
+.overlay.bg-one {
+   background: rgba(155, 210, 48, .9);
+}
+
+.bg-counter-light .icon-counters:hover .img-icon {
+   background: #00bcd4;
+}
+#client-fading .testimonial-wrapp .quoted,
+#client-fading .testimonial-wrapp .testimonial-text {
+   background: transparent;
+}
+.testimonial-wrapp .testimonial-text {
+   background: #f6f6f6;
+   border: 1px solid #f1f1f1;
+}
+
+.progress-bars .progress p,
+.progress-bars .progress .progress-bar span,
+.meta-tags li a, .pagination li > a,
+.webtags li a, .btn_reply ,
+.getin_form .form-control,
+.form-group label, .checkbox label,
+::-webkit-input-placeholder,
+.form-control::-webkit-input-placeholder,
+:-moz-placeholder,
+.form-control:-moz-placeholder,
+::-moz-placeholder,
+.form-control::-moz-placeholder,
+:-ms-input-placeholder,
+.form-control:-ms-input-placeholder,
+textarea::-webkit-input-placeholder,
+textarea:-moz-placeholder,
+textarea::-moz-placeholder,
+textarea:-ms-input-placeholder {
+   color: #a5a5a5;
+}
+/*Pagination*/
+.pagination li > a::before {
+   background: #9bd230;
+}
+.widget_search .form-control,
+.widget_search .input-group-addon {
+   background: #f5f5f5;
+}
+.news_item:hover h3,
+.meta-tags li a:hover,
+.meta-tags li a:focus ,
+.widget_search .input-group-addon {
+   color: #ca1b75;
+} 
+.eny_profile,
+.webtags li a,
+.btn_reply {
+   border: 1px solid #a5a5a5;
+}
+.webtags li a:hover,
+.webtags li a:focus {
+   border: 1px solid #00bcd4;
+}
+.webtags li a:hover,
+.webtags li a:focus,
+ul.rounded li::before,
+.webcats li a::before {
+   background: #cd1a72;
+   border-radius: 50px;
+}
+.testimonial-wrapp .quoted,
+.pagination li > a:hover,
+.pagination li > a:focus,
+.pagination li.active > a,
+.webtags li a:hover,
+.webtags li a:focus,
+.form-check input[type="checkbox"]:checked + label::before {
+   color: #fff;
+}
+
+.our-address h5,
+.our-address .pickus::after,
+.our-address .pickus:hover,
+.our-address .pickus:focus {
+   color: #212331;
+}
+.getin_form .form-control {
+   border-bottom: 1px solid #a5a5a5;
+}
+.border-form .form-control,
+.form-check label::before {
+   border: 1px solid #a5a5a5;
+}
+.getin_form .form-control:focus,
+.border-form .form-control:focus {
+   border-color: #212331;
+}
+.form-check input[type="checkbox"]:checked + label::before {
+   background: #00bcd4;
+   border-color: #00bcd4;
+}
+
+footer ul.social-icons:not(.small) li a {
+   background: transparent;
+}
+footer ul.social-icons li a {
+   background: #f5f5f5;
+}
+.single_post:hover a, .single_post:focus a,
+.webcats li a:hover, .webcats li a:focus,
+.log-meta > a:hover, .log-meta > a:focus,
+footer .copyrights > a:hover, footer .copyrights > a:focus {
+   color: #ca1b75;
+}
+/*----- Footer ends -----*/
+
+
+/*----- PreLoader -----*/
+.loader {
+   background: #fff;
+}
+.circle {
+   border-right: 4px solid #a12583;
+}
+.circle:before, .circle:after {
+   border-left: 3px solid #dd1668;
+}
+.circle:after {
+   border-right: 2px solid #a12583;
+}
+/* ---- Loader ends ----- */
