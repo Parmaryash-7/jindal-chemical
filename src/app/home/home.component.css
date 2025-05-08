@@ -1,18 +1,23 @@
 .swiper1 {
     width: 100%;
 
+    /* .swiper-wrapper {
+        gap: 100%;
+    } */
+
     .text {
         text-align: center;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        pointer-events: none;
     }
 
     h1 {
-        font-size: var(--banner-title-font-size);
+        /* font-size: var(--banner-title-font-size); */
         font-family: var(--light-font-family);
-        font-weight: 100;
+        font-weight: 500;
     }
 
     .gradient_color_banner {
@@ -22,5 +27,73 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+
+    .swiper-button-next::after {
+        margin-right: var(--btn-margin);
+    }
+
+    .swiper-button-prev::after {
+        margin-left: var(--btn-margin);
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        height: 2rem;
+        width: 2rem;
+        font-size: 2rem !important;
+        top: 50%;
+
+    }
+}
+
+.section2 {
+    background-image: url('/assets/images/dotted-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 50px;
+    z-index: 1;
+    padding-bottom: 20px;
+}
+
+
+.illustration {
+    position: absolute;
+    right: 70px;
+    bottom: 20px;
+    text-align: right;
+    opacity: 0.1;
+    width: 18%;
+    height: auto;
+}
+
+.aboutus-wrapp .about-gradient {
+    position: absolute;
+    height: 65%;
+    width: 75%;
+    z-index: -1;
+    display: block;
+    left: 15px;
+    bottom: 0;
+    background: var(--btn-bg-gradient-default);
+}
+
+.aboutus-wrapp .about-bordered {
+    padding: 0 0 15% 15%;
+}
+
+.aboutus-wrapp .about-bordered img {
+    border: 20px solid #f6f6f6;
+}
+
+@media screen and (max-width:540px) {
+    .aboutus-wrapp .heading-title {
+        padding-top: 28px;
+    }
+
+    .illustration {
+        bottom: 0;
     }
 }

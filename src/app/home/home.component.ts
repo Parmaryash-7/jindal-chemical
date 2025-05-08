@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import Swiper, { Mousewheel, Navigation, Pagination } from "swiper";
+import Swiper, { Autoplay, Mousewheel, Navigation, Pagination } from "swiper";
 
 @Component({
   selector: 'app-home',
@@ -15,12 +15,13 @@ export class HomeComponent implements OnInit {
   }
 
   ngAfterViewInit(): void {
+    Swiper.use([Autoplay]);
     Swiper.use([Navigation]);
 
     this.swiper = new Swiper(".swiper-container", {
-      slidesPerView: "auto",
-      spaceBetween: 24,
-      speed: 500,
+      slidesPerView: 1,
+      spaceBetween: 5000,
+      speed: 1000,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -29,8 +30,10 @@ export class HomeComponent implements OnInit {
         el: ".swiper-pagination",
         type: "progressbar",
       },
+      autoplay: {
+        delay: 5000,
+      },
       loop: true,
-      mousewheel: true,
     });
   }
 
