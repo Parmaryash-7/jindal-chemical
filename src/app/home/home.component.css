@@ -146,6 +146,75 @@
     }
 }
 
+.cbp-item-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.cbp-item-wrapper .overlay h4 {
+    font-size: 20px;
+}
+
+.cbp-item-wrapper .overlay {
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    z-index: 4;
+    height: 95%;
+    width: 95%;
+    margin: 0 auto;
+    opacity: 0;
+    transition: all .5s ease-in .1s;
+}
+
+.cbp-item-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+.maps {
+    height: 450px;
+    width: 100%;
+}
+
+.whitecolor {
+    * {
+        color: white;
+    }
+}
+
+.overlay>.plus {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    /* Required for absolutely positioned children */
+}
+
+.overlay>.plus::before,
+.overlay>.plus::after {
+    content: "";
+    /* Required to render pseudo-elements */
+    position: absolute;
+    background: #fff;
+}
+
+.overlay>.plus::after {
+    height: 2px;
+    top: 50%;
+    left: 5px;
+    right: 5px;
+    margin-top: -1px;
+    /* Center vertically */
+}
+
+.overlay>.plus::before {
+    width: 2px;
+    top: 5px;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -1px;
+    /* Center horizontally */
+}
 
 @media screen and (max-width:767px) {
 
