@@ -3,6 +3,7 @@
 }
 
 /*----- Footer -----*/
+
 .white-color {
     color: white;
 }
@@ -67,4 +68,30 @@ footer .copyrights>a:hover, footer .copyrights>a:focus {
     color: #777777;
 }
 
+.back-top, .back-top:hover, .back-top:focus, ul.social-icons li a::before {
+    background: rgb(155 210 48 / 90%);
+    border-radius: 50px;
+}
+
+.back-top-visible {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-top {
+    right: 20px;
+    font-size: 26px;
+    position: fixed;
+    z-index: 1600;
+    opacity: 0;
+    visibility: hidden;
+    bottom: 70px;
+    background: #777982;
+    transform: scale(0);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+}
 /*----- Footer ends -----*/
