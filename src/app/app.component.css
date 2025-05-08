@@ -1,0 +1,70 @@
+:root {
+    --color-white: white;
+}
+
+/*----- Footer -----*/
+.white-color {
+    color: white;
+}
+
+.black-color {
+    color: black;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+.lh-30 {
+    line-height: 30px;
+}
+
+.f-paragraph-color {
+    color: #cc1b74;
+
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.footer-bg-colr {
+    background-color: #aa218014;
+}
+
+.padding_half {
+    padding: 4.375rem 0;
+}
+
+footer .copyrights {
+    font-size: 13px;
+}
+
+.footer-logo {
+    display: inline-block;
+    max-width: 230px;
+}
+
+footer ul.social-icons:not(.small) li a {
+    height: 58px;
+    width: 58px;
+    line-height: 58px;
+    font-size: 20px;
+    border: none;
+    background: transparent;
+}
+
+footer ul.social-icons li a {
+    background: #f5f5f5;
+}
+
+footer .copyrights>a:hover, footer .copyrights>a:focus {
+    color: #00bcd4;
+}
+
+.copyright {
+    padding: 1rem 0;
+    color: #777777;
+}
+
+/*----- Footer ends -----*/
