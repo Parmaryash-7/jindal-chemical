@@ -60,11 +60,40 @@
 
 
 .illustration {
-    position: absolute !important;
-    right: 75px;
-    bottom: 0;
+    position: absolute;
+    right: 70px;
+    bottom: 20px;
     text-align: right;
     opacity: 0.1;
-    width: 100%;
+    width: 18%;
     height: auto;
+}
+
+.aboutus-wrapp .about-gradient {
+    position: absolute;
+    height: 65%;
+    width: 75%;
+    z-index: -1;
+    display: block;
+    left: 15px;
+    bottom: 0;
+    background: var(--btn-bg-gradient-default);
+}
+
+.aboutus-wrapp .about-bordered {
+    padding: 0 0 15% 15%;
+}
+
+.aboutus-wrapp .about-bordered img {
+    border: 20px solid #f6f6f6;
+}
+
+@media screen and (max-width:540px) {
+    .aboutus-wrapp .heading-title {
+        padding-top: 28px;
+    }
+
+    .illustration {
+        bottom: 0;
+    }
 }
