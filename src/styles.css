@@ -94,26 +94,23 @@
 
 @font-face {
     font-family: 'fa-brands';
-    src: url('./assets/fonts/fa-brands-400.woff2') format('woff2'),
-        url('./assets/fonts/fa-brands-400.woff') format('woff');
-    font-weight: 600;
+    src: url('./assets/fonts/Raleway-Thin.ttf');
+    font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'fa-solid';
-    src: url('./assets/fonts/fa-solid-900.woff2') format('woff2'),
-        url('./assets/fonts/fa-solid-900.woff') format('woff');
-    font-weight: 900;
+    src: url('./assets/fonts/Raleway-Bold.ttf');
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'fa-regular';
-    src: url('./assets/fonts/fa-regular-400.woff2') format('woff2'),
-        url('./assets/fonts/fa-regular-400.woff') format('woff');
+    src: url('./assets/fonts/Raleway-Regular.ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -151,7 +148,7 @@
     --medium-gap-size: 3rem;
     --big-gap-size: 6rem;
     /*Gradient*/
-    --bg-gradient-defaul: linear-gradient(#f69c25, #ee3956, #ce1972, #5c318c);
+    --bg-gradient-default: linear-gradient(#f69c25, #ee3956, #ce1972, #5c318c);
 }
 
 /* Custom scrollbar for Webkit browsers (Chrome, Safari) */

@@ -1,12 +1,24 @@
 .swiper1 {
+    width: 100%;
 
-    p {
-        font-size: --banner-title-font-size;
+    .text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
-    span {
+    h1 {
+        font-size: var(--banner-title-font-size);
+        font-family: var(--light-font-family);
+        font-weight: 100;
+    }
+
+    .gradient_color_banner {
         color: transparent;
         background-image: var(--bg-gradient-default);
+        font-family: var(--bold-font-family);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
