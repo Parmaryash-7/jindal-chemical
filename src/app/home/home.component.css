@@ -182,5 +182,8 @@
         font-size: calc(var(--banner-title-font-size) - .8rem);
     }
 
-
+    .container-padding {
+        padding-right: 1rem;
+        padding-left: 2rem;
+    }
 }
