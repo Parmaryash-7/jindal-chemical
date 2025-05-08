@@ -116,7 +116,9 @@
     font-display: swap;
 }
 
-
+.fontbold {
+    font-weight: bold !important;
+}
 
 :root {
     /* colors */
@@ -129,7 +131,7 @@
     --background-gray: #F5F5F5;
     --secondary-highlight-color: #0366D6;
     /* font-sizes */
-    --banner-title-font-size: 4.5rem;
+    --banner-title-font-size: 3.75rem;
     --section-title-font-size: 2.375rem;
     --section-subtitle-font-size: 2rem;
     --paragraph-font-size: 1.5rem;
@@ -149,6 +151,14 @@
     --big-gap-size: 6rem;
     /*Gradient*/
     --bg-gradient-default: linear-gradient(#f69c25, #ee3956, #ce1972, #5c318c);
+    /*swiper*/
+    --swiper-navigation-color: var(--white-color);
+    --swiper-navigation-size: 2rem;
+    --btn-margin: 8rem;
+}
+
+.font-stylo {
+    font-size: var(--banner-title-font-size);
 }
 
 /* Custom scrollbar for Webkit browsers (Chrome, Safari) */
@@ -817,3 +827,64 @@ button:focus-visible {
 .form-control-master-html-template:focus-visible {
     border-color: var(--primary-color);
 }
+
+@media only screen and (max-width: 1680px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 1152px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 11px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    .visible-tab-mobile {
+        display: block !important;
+    }
+
+    .hide-tab-mobile {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .swiper h1 {
+        font-size: 25px;
+    }
+
+    .visible-mobile-only {
+        display: block !important;
+    }
+
+    .hide-mobile-only {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 325px) {}
