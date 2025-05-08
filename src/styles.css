@@ -93,54 +93,27 @@
 
 
 @font-face {
-    font-family: 'Poppins-SemiBold';
-    src: url('../fonts/poppins/Poppins-SemiBold.woff2') format('woff2'),
-        url('../fonts/poppins/Poppins-SemiBold.woff') format('woff');
+    font-family: 'fa-brands';
+    src: url('./assets/fonts/fa-brands-400.woff2') format('woff2'),
+        url('./assets/fonts/fa-brands-400.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins-Black';
-    src: url('../fonts/poppins/Poppins-Black.woff2') format('woff2'),
-        url('../fonts/poppins/Poppins-Black.woff') format('woff');
+    font-family: 'fa-solid';
+    src: url('./assets/fonts/fa-solid-900.woff2') format('woff2'),
+        url('./assets/fonts/fa-solid-900.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins-Bold';
-    src: url('../fonts/poppins/Poppins-Bold.woff2') format('woff2'),
-        url('../fonts/poppins/Poppins-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins-Light';
-    src: url('../fonts/poppins/Poppins-Light.woff2') format('woff2'),
-        url('../fonts/poppins/Poppins-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins-Medium';
-    src: url('../fonts/poppins/Poppins-Medium.woff2') format('woff2'),
-        url('../fonts/poppins/Poppins-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins-Regular';
-    src: url('../fonts/poppins/Poppins-Regular.woff2') format('woff2'),
-        url('../fonts/poppins/Poppins-Regular.woff') format('woff');
+    font-family: 'fa-regular';
+    src: url('./assets/fonts/fa-regular-400.woff2') format('woff2'),
+        url('./assets/fonts/fa-regular-400.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -166,12 +139,9 @@
     --content-font-size: 1.15rem;
     --link-font-size: 1rem;
     /* font-families */
-    --light-font-family: "Poppins-Light";
-    --regular-font-family: "Poppins-Regular";
-    --medium-font-family: "Poppins-Medium";
-    --semibold-font-family: "Poppins-SemiBold";
-    --bold-font-family: "Poppins-Bold";
-    --black-font-family: "Poppins-Black";
+    --light-font-family: "fa-brands";
+    --regular-font-family: "fa-regular";
+    --bold-font-family: "fa-solid";
     /* other */
     --common-transition: all 0.6s ease;
     --web-border-radius: 0.625rem;
