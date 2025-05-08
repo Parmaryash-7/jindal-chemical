@@ -93,7 +93,7 @@
 
 
 @font-face {
-    font-family: 'fa-brands';
+    font-family: 'raleway-thin';
     src: url('./assets/fonts/Raleway-Thin.ttf');
     font-weight: 100;
     font-style: normal;
@@ -101,7 +101,7 @@
 }
 
 @font-face {
-    font-family: 'fa-solid';
+    font-family: 'raleway-bold';
     src: url('./assets/fonts/Raleway-Bold.ttf');
     font-weight: 600;
     font-style: normal;
@@ -109,7 +109,7 @@
 }
 
 @font-face {
-    font-family: 'fa-regular';
+    font-family: 'raleway-regularr';
     src: url('./assets/fonts/Raleway-Regular.ttf');
     font-weight: normal;
     font-style: normal;
@@ -136,9 +136,9 @@
     --content-font-size: 1.15rem;
     --link-font-size: 1rem;
     /* font-families */
-    --light-font-family: "fa-brands";
-    --regular-font-family: "fa-regular";
-    --bold-font-family: "fa-solid";
+    --light-font-family: "raleway-thin";
+    --regular-font-family: "raleway-regularr";
+    --bold-font-family: "raleway-bold";
     /* other */
     --common-transition: all 0.6s ease;
     --web-border-radius: 0.625rem;
