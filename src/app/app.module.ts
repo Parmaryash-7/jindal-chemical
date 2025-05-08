@@ -11,6 +11,8 @@ import { SustainabilityComponent } from './sustainability/sustainability.compone
 import { LifeAtJindalComponent } from './life-at-jindal/life-at-jindal.component';
 import { JoinTeamComponent } from './join-team/join-team.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { VmvComponent } from './vmv/vmv.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ContactComponent } from './contact/contact.component';
     SustainabilityComponent,
     LifeAtJindalComponent,
     JoinTeamComponent,
-    ContactComponent
+    ContactComponent,
+    AboutUsComponent,
+    VmvComponent
   ],
   imports: [
     BrowserModule,
