@@ -1631,10 +1631,10 @@ ul.rounded li::before,
    }
 
 
-.center-brand {
-   padding-top: 0;
-   padding-bottom: 0;
-}
+   .center-brand {
+      padding-top: 0;
+      padding-bottom: 0;
+   }
 
 }
 
@@ -1746,7 +1746,10 @@ ul.rounded li::before,
 
    }
 
-
+   .center-brand {
+      padding-top: 0;
+      padding-bottom: 0;
+   }
 
    .navbar-nav .nav-item {
 
@@ -1837,10 +1840,7 @@ ul.rounded li::before,
       display: none;
 
    }
-   .center-brand {
-    padding-top: 0;
-    padding-bottom: 0;
-}
+
 }
 
 
