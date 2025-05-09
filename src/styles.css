@@ -166,6 +166,7 @@
 .font_15 {
     font-size: var(--p-font-size);
 }
+
 .font_20 {
     font-size: 20px;
 }
@@ -201,6 +202,18 @@
 
 .darkcolor {
     color: #212331;
+}
+
+.greycolor {
+    color: #777777;
+}
+
+.bluecolor {
+    color: #443189;
+}
+
+.padding_top_half {
+    padding-top: 4.375rem;
 }
 
 .heading-title>span {
@@ -644,7 +657,13 @@ i::after {
 
 }
 
-
+ul.rounded li::before {
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline-block;
+}
 
 i::before,
 i::after .back-top,
