@@ -200,6 +200,18 @@
     color: #212331;
 }
 
+.greycolor {
+    color: #777777;
+}
+
+.bluecolor {
+    color: #443189;
+}
+
+.padding_top_half {
+    padding-top: 4.375rem;
+}
+
 .heading-title>span {
     font-size: 1.25rem;
     display: block;
