@@ -69,7 +69,8 @@
 
 }
 
-.circle:before, .circle:after {
+.circle:before,
+.circle:after {
 
    content: '';
 
@@ -1471,7 +1472,6 @@ ul.rounded li::before,
 }
 
 
-
 @media (max-width: 1400px) {
 
    .side-menu .inner-wrapper {
@@ -1954,7 +1954,10 @@ ul.social-icons li a::before {
    line-height: 40px;
 }
 
-.back-top, .back-top:hover, .back-top:focus, ul.social-icons li a::before {
+.back-top,
+.back-top:hover,
+.back-top:focus,
+ul.social-icons li a::before {
    background: rgb(155 210 48 / 90%);
    border-radius: 50px;
 }
