@@ -1890,6 +1890,12 @@ footer .copyrights {
    font-size: 13px;
 }
 
+.social-icons {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+}
+
 .footer-logo {
    display: inline-block;
    max-width: 230px;
