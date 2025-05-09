@@ -171,6 +171,10 @@
     background: #f6f6f6;
 }
 
+.whitecolor {
+    color: #fff;
+}
+
 .font-light {
     font-size: var(--paragraph-font-size);
 }
@@ -206,6 +210,10 @@
 
 .top20 {
     margin-top: 20px;
+}
+
+.top30 {
+    margin-top: 30px;
 }
 
 .bottom20 {
@@ -747,6 +755,55 @@ ul.rounded li::before,
 }
 
 
+.center-block {
+
+    display: -webkit-box;
+
+    display: -webkit-flex;
+
+    display: -moz-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-pack: center;
+
+    -webkit-justify-content: center;
+
+    -moz-box-pack: center;
+
+    -ms-flex-pack: center;
+
+    justify-content: center;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-box-direction: normal;
+
+    -webkit-flex-direction: column;
+
+    -moz-box-orient: vertical;
+
+    -moz-box-direction: normal;
+
+    -ms-flex-direction: column;
+
+    flex-direction: column;
+
+    -webkit-box-align: center;
+
+    -webkit-align-items: center;
+
+    -moz-box-align: center;
+
+    -ms-flex-align: center;
+
+    align-items: center;
+
+}
+
+
 
 /* Custom scrollbar for Webkit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
@@ -1081,6 +1138,10 @@ button:focus-visible {
 
 .w90 {
     width: 90%;
+}
+
+.w-fit {
+    width: fit-content;
 }
 
 .inner-flex {
