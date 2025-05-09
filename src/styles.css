@@ -649,6 +649,10 @@ button,
 
 }
 
+.navbar {
+    will-change: top;
+}
+
 i::before,
 i::after {
 
