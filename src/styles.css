@@ -1227,7 +1227,7 @@ button:focus-visible {
     gap: 25px;
 }
 
-.inner-flex.inner-flex-small {
+.inner-flex .inner-flex-small {
     gap: var(--small-gap-size);
 }
 
