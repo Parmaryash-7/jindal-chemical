@@ -1,0 +1,119 @@
+.page-header {
+    background-image: url('src/assets/images/about-us.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0px;
+}
+
+.ofc {
+    object-fit: contain;
+}
+
+
+.center-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.font_16 {
+    font-size: 16px;
+}
+
+.padding_top {
+    padding-top: 1.5rem;
+}
+
+.pb-30 {
+    padding: 30px 0;
+}
+
+.inner-flex-small {
+    gap: 1.5rem;
+}
+
+.top20 {
+    margin-top: 20px;
+}
+
+.top30 {
+    margin-top: 30px;
+}
+
+
+section {
+    position: relative;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.bottom20 {
+    margin-bottom: 20px;
+}
+
+.lh-26 {
+    line-height: 26px;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+.news_item .news_desc {
+    padding: 40px 30px;
+}
+
+.news_item.shadow {
+    box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 40px;
+}
+
+.bottom35 {
+    margin-bottom: 35px;
+}
+
+.main-heading {
+    font-weight: 700;
+    color: #443189;
+}
+
+h3 {
+    font-size: 1.875rem;
+}
+
+@media only screen and (max-width: 370px) {
+
+    .container {
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .news_item {
+        background: transparent;
+    }
+
+    .shadow {
+        box-shadow: 0 0;
+        border-radius: 0;
+    }
+
+    .bottom35 {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .font_20 {
+        font-size: 15px;
+    }
+}
