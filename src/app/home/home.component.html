@@ -260,16 +260,15 @@
 
     <section class="section6 contact relative">
         <div class="grid grid_c-1-1">
-            <div class="left_side bglight text-center container-padding">
-                <div class="heading-title w100 bottom25 text-center animated fadeInUp" data-animation="fadeInUp"
-                    data-wow-duration="700ms" data-wow-delay="300ms">
+            <div class="left_side bglight text-center container-padding relative animated fadeInUp"
+                data-animation="fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
+                <div class="heading-title w100 bottom25 text-center">
                     <h2 class="top20 darkcolor">Lets get in touch</h2>
                 </div>
                 <div class="content grid grid_c-1-1 bottom20">
                     <div class="block corporate top30">
                         <h4 class="title bottom15">Corporate Office</h4>
-                        <div class="heading-title text-center bottom15 animated fadeInUp" data-animation="fadeInUp"
-                            data-wow-duration="700ms" data-wow-delay="300ms">
+                        <div class="heading-title text-center bottom15">
                             <p class="sans p_text">"Jindal House" Opp.
                                 Shivranjani Shyamal 132 Ft Ring Road, Satellite, Ahmedabad - 380015, Gujarat, INDIA.</p>
                         </div>
@@ -278,8 +277,7 @@
                     </div>
                     <div class="block manufacturing top30">
                         <h4 class="title bottom15">Manufacturing Unit</h4>
-                        <div class="heading-title text-center bottom15 animated fadeInUp" data-animation="fadeInUp"
-                            data-wow-duration="700ms" data-wow-delay="300ms">
+                        <div class="heading-title text-center bottom15">
                             <p class="sans p_text">Expede Tech Research &
                                 Development Private Limited survey no. 1149/1,Navagam nayaka road, Village nayaka,Kheda
                                 Gujarat- 387550</p>
@@ -303,11 +301,45 @@
                     </div>
                 </div>
             </div>
-
+            <div class="right_side section-padding-small relative bgwhite ">
+                <form class=" form contact_form top30 container-padding grid grid_c-1-1" [formGroup]="contactForm"
+                    (submit)="onSubmit()">
+                    <div class="form_group w100"
+                        [class.has-error]=" formSubmitted && contactForm.get('name')?.invalid ">
+                        <div class="input_wrapper w100">
+                            <input class="w100" type="text" formControlName="name" placeholder="Enter your name..."
+                                required />
+                        </div>
+                    </div>
+                    <div class="form_group w100"
+                        [class.has-error]=" formSubmitted && contactForm.get('email')?.invalid ">
+                        <div class="input_wrapper w100">
+                            <input class="w100" type="email" formControlName="email" placeholder="Your Email"
+                                required />
+                        </div>
+                    </div>
+                    <div class="form_group w100"
+                        [class.has-error]=" formSubmitted && contactForm.get('mobile_no')?.invalid ">
+                        <div class="input_wrapper w100">
+                            <input pattern="^[0-9]{10}$" (keypress)="restrictNonNumeric($event)" maxlength="10"
+                                class="w100" type="tel" formControlName="mobile_no" placeholder="Mobile No." required />
+                        </div>
+                    </div>
+                    <div class="form_group w100"
+                        [class.has-error]=" formSubmitted && contactForm.get('message')?.invalid ">
+                        <div class="input_wrapper w100">
+                            <input class="w100" type="text" formControlName="message" placeholder="Message" required />
+                        </div>
+                    </div>
+                    <a (click)="$event.pevenrDefault(); onSubmit();" class="button submit_btn gradient_bg_two">
+                        <div class="whitecolor">Send Message</div>
+                    </a>
+                </form>
+            </div>
         </div>
     </section>
 
-    <section class="maps w100">
+    <section class="maps w100 relative">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d130443.76222540202!2d72.60193173873698!3d22.956535941217272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%22Jindal%20House%22%20Opp.%20Shivranjani%20Shyamal%20132%20Ft%20Ring%20Road%2C%20Satellite%2C%20Ahmedabad%20-%20380015%2C%20Gujarat%2C%20INDIA.!5e0!3m2!1sen!2sin!4v1666958343565!5m2!1sen!2sin"
             width="2000" height="1000" style="border:0;" allowfullscreen="" loading="lazy"

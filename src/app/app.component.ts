@@ -15,19 +15,19 @@ export class AppComponent {
 
   set isMenuOpen(value: boolean) {
     this._isMenuOpen = value;
-    document.body.style.overflow = value ? 'hidden' : '';
+    // document.body.style.overflow = value ? 'hidden' : '';
   }
 
   toggleMenu(e: any) {
-    // if (window.outerWidth <= 1280) {
     this.isMenuOpen = !this.isMenuOpen;
     console.log('object');
-    // }
   }
 
   ngOnInit() {
-    document.addEventListener('keydown', () => {
-      this.isMenuOpen = false;
+    document.addEventListener('keydown', (e) => {
+      if (e.code.toLowerCase() == 'escape') {
+        this.isMenuOpen = false;
+      }
     })
   }
 }

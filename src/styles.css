@@ -171,6 +171,10 @@
     background: #f6f6f6;
 }
 
+.bgwhite {
+    background: white;
+}
+
 .whitecolor {
     color: #fff;
 }
@@ -258,6 +262,57 @@
 
 .color-light {
     color: #777777;
+}
+
+input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i]) {
+    overflow-clip-margin: 0px !important;
+    overflow: clip !important;
+}
+
+input[type="text" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+input {
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+.submit_btn {
+    cursor: pointer;
+}
+
+.submit_btn {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.submit_btn:active,
+.submit_btn:focus {
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5);
+    background-color: #0062cc;
+    border-color: #005cbf;
 }
 
 button:focus,
@@ -1539,6 +1594,12 @@ button:focus-visible {
     } */
 }
 
+@media screen and (max-width:1400px) {
+    .container-padding {
+        padding: 0 15px;
+    }
+}
+
 @media only screen and (max-width: 1366px) {
     /* html {
         font-size: 13px;
@@ -1583,6 +1644,10 @@ button:focus-visible {
 
     }
 
+    .container-padding {
+        padding: 0 5px;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -1604,7 +1669,7 @@ button:focus-visible {
         padding-left: 5rem;
     }
 
-    .grid_c-1-1 {
+    .grid_c-1-1:not(.form):not(.content) {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
     }
