@@ -288,3 +288,7 @@ i {
         background: transparent;
     }
 }
+
+.back-top {
+    display: none !important;
+}

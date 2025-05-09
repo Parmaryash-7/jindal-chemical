@@ -1753,15 +1753,21 @@ button:focus-visible {
 
 @media only screen and (max-width: 325px) {}
 
-.back-top-visible {
-    background: rgb(155 210 48 / 90%) !important;
-}
-
 .back-top.back-top-visible {
-    border-radius: 50px;
+    background: rgb(155 210 48 / 90%) !important;
     transform: scale(1);
     opacity: 1;
     visibility: visible;
+}
+
+.back-top {
+    border-radius: 50px;
+    /* transform: scale(1);
+    opacity: 1; */
+    /* visibility: visible; */
+    transform: scale(0);
+    opacity: 0;
+    visibility: hidden;
     right: 20px;
     font-size: 26px;
     position: fixed;
