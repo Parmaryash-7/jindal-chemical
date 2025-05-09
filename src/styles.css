@@ -1,6 +1,6 @@
-.wow {
+/* .wow {
     visibility: hidden;
-}
+} */
 
 @-webkit-keyframes fade_top {
     0% {
@@ -184,7 +184,7 @@
 }
 
 .whitecolor {
-    color: #fff;
+    color: #fff !important;
 }
 
 .font-light {
@@ -246,12 +246,21 @@
     line-height: normal;
 }
 
+.tech-box {
+    height: 160px;
+    padding: 1rem 15px !important;
+}
+
 .top20 {
     margin-top: 20px;
 }
 
 .top30 {
     margin-top: 30px;
+}
+
+.bottom10 {
+    margin-bottom: 10px;
 }
 
 .bottom15 {

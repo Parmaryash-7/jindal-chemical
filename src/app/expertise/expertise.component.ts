@@ -6,32 +6,66 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./expertise.component.css"],
 })
 export class ExpertiseComponent implements OnInit {
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
   activeTab = "Chemistry";
 
   tabs = [
     {
       id: "Chemistry",
       label: "Chemistry",
-      title: "Content for Tab 1",
-      content: "This is the content for the first tab.",
-      align: "left",
     },
     {
       id: "Technologies",
       label: "Technologies",
-       title: "Content for Tab 1",
-      content: "This is the content for the first tab.",
-      align: "left",
     },
     {
       id: "R & D",
       label: "R & D",
-       title: "Content for Tab 1",
-      content: "This is the content for the first tab.",
-      align: "left"
+    },
+  ];
+
+  TECH_LIST = [
+    {
+      icon: 'assets/images/expertise/amination.png',
+      text: 'Amination Technology',
+    },
+    {
+      icon: 'assets/images/expertise/green-chemistry.png',
+      text: 'Green Chemistry',
+    },
+    {
+      icon: 'assets/images/expertise/high-vacuum.png',
+      text: 'High Vacuum Fractional Distillation',
+    },
+    {
+      icon: 'assets/images/expertise/fermentation-technology.png',
+      text: 'Fermentation Technology',
+    },
+    {
+      icon: 'assets/images/expertise/heterocycle.png',
+      text: 'Heterocycle Chemistry',
+    },
+    {
+      icon: 'assets/images/expertise/process-automation.png',
+      text: 'Process Automation DCS/ SCADA/ PLC',
+    },
+    {
+      icon: 'assets/images/expertise/spray-drying.png',
+      text: 'Filtration/ Spray Drying',
+    },
+    {
+      icon: 'assets/images/expertise/high-pressure.png',
+      text: 'High Pressure Reaction',
+    },
+    {
+      icon: 'assets/images/expertise/vapour-phase.png',
+      text: 'Vapour Phase Technology',
+    },
+    {
+      icon: 'assets/images/expertise/fixed-bed.png',
+      text: 'Fixed-Bed Reaction',
     },
   ];
 
