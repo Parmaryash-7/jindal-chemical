@@ -21,7 +21,7 @@ const routes: Routes = [
     component: AboutUsComponent,
   },
   {
-    path: "vmv",
+    path: "vision-mission-values",
     component: VmvComponent,
   },
   {
