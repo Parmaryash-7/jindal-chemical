@@ -16,7 +16,8 @@ export class GalleryComponent implements OnInit {
 
   ngAfterViewInit(): void {
     Fancybox.bind('[data-fancybox="gallery"]', {
-    })
+
+    });
   }
 
   images = [
