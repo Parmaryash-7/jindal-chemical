@@ -1,5 +1,601 @@
 <div class="jindal_chemical_wrapper" style="overflow-x:  hidden;">
 
+   
+<!-- header -->
+
+  
+
+   <!-- header -->
+
+<header class="site-header">
+
+   <nav class="navbar navbar-expand-lg center-brand static-nav">
+
+      <div class="container">
+
+         <a class="navbar-brand" routerLink="/home">
+
+            <img src="assets/images/logo.svg" alt="logo">
+
+         </a>
+
+         <button class="navbar-toggler navbar-toggler-right collapsed d-none" type="button" data-toggle="collapse" data-target="#xenav">
+
+            <span> </span>
+
+            <span> </span>
+
+            <span> </span>
+
+         </button>
+
+         <div class="collapse navbar-collapse" id="xenav">
+
+            <ul class="navbar-nav" id="container">
+
+               <li class="nav-item">
+
+                  <a class="nav-link" roterLink="/home"><i class="fa fa-home ico-size"></i></a>
+
+               </li>  
+
+               <li class="nav-item">
+
+                  <div class="dropdown">
+
+                    <button class="header-menu-items">About us <i class='fas fa-angle-down' style='font-size:15px'></i></button>
+
+                    <div class="dropdown-content">
+
+                        <a class="nav-link" routerLink="/about-us">About us</a>
+
+                        <a class="nav-link" routerLink="/vision-mission-values">Vision Mission Values</a>
+
+                        <!--<a class="nav-link" href="leadership.php">Leadership</a>-->
+
+                    </div>
+
+                  </div>
+
+               </li>
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/expertise">Expertise</a>
+
+               </li>
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/applications">Applications</a>
+
+               </li>
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/products">Products</a>
+
+               </li>               
+
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/sustainability">Sustainability</a>
+
+               </li>
+
+
+
+               <li class="nav-item">
+
+                  <div class="dropdown">
+
+                    <button class="header-menu-items">Media <i class='fas fa-angle-down' style='font-size:15px'></i></button>
+
+                    <div class="dropdown-content">
+
+                        <a class="nav-link" routerLink="/news">News</a>  
+
+                        <a class="nav-link" href=""></a>                                            
+
+                        <!--<a class="nav-link" href="reports.php">Reports</a>
+
+                        <a class="nav-link" href="insights.php">Insights</a> -->
+
+                        <a class="nav-link" routerLink="/blogs">Blogs</a>
+
+                    </div>
+
+                  </div>
+
+               </li>
+
+
+               <li class="nav-item">
+
+                  <div class="dropdown">
+
+                    <button class="header-menu-items">Careers <i class='fas fa-angle-down' style='font-size:15px'></i></button>
+
+                    <div class="dropdown-content">
+
+                      <a class="nav-link" routerLink="life-at-jindal">Life at JSC</a>
+
+                      <a class="nav-link" routerLink="join-team">Join our team</a>
+
+                    </div>
+
+                  </div>
+
+               </li>               
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="contact" style="margin-right: 15px;">Contact</a>
+
+               </li>
+
+            </ul>
+
+         </div>
+
+      </div>
+
+
+
+      <!--side menu open button-->
+
+      <a href="javascript:void(0)" class="d-lg-inline-block sidemenu_btn" id="sidemenu_toggle">
+
+         <span></span> <span></span> <span></span>
+
+      </a>
+
+   </nav>
+
+
+
+   <!-- side menu -->
+
+   <div class="side-menu gradient_bg_two">
+
+      <div class="inner-wrapper">
+
+         <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
+
+         <nav class="side-nav w-100">
+
+            <ul class="navbar-nav">
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/home">Home</a>
+
+               </li>   
+
+               <li class="">
+
+                  <div class="dropdown">
+
+                   <button class="btn btn-default dropdown-toggle dropdn-btn-css" type="button" id="menu1" data-toggle="dropdown">About us 
+
+                   <span class="caret"></span></button>
+
+                   <ul class="dropdown-menu menubar-css" role="menu" aria-labelledby="menu1">
+
+                        <li class="mob-menu-dropdn"><a class="hovr-link-css" routerLink="/about-us">About us </a></li>
+
+                        <li class="mob-menu-dropdn"><a class="hovr-link-css" routerLink="/vision-mission-values">Vision Mission Values</a></li>
+
+                        <!--<li class="mob-menu-dropdn"><a class="hovr-link-css" href="leadership.php">Leadership</a></li>-->
+
+                   </ul>
+
+                 </div>
+
+               </li>  
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/expertise">Expertise</a>
+
+               </li>
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/applications">Applications</a>
+
+               </li>
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/products">Products</a>
+
+               </li>
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/sustainability">Sustainability</a>
+
+               </li>
+
+
+
+               <li class="">
+
+                  <div class="dropdown">
+
+                   <button class="btn btn-default dropdown-toggle dropdn-btn-css" type="button" id="menu1" data-toggle="dropdown">Media
+
+                   <span class="caret"></span></button>
+
+                   <ul class="dropdown-menu menubar-css" role="menu" aria-labelledby="menu1">
+
+                        <li class="mob-menu-dropdn"><a class="hovr-link-css" routerLink="/news">News</a></li>                     
+
+                        <!--<li class="mob-menu-dropdn"><a class="hovr-link-css" href="reports.php">Reports</a></li>
+
+                        <li class="mob-menu-dropdn"><a class="hovr-link-css" href="insights.php">Insights</a></li>
+
+                        <li class="mob-menu-dropdn"><a class="hovr-link-css" href="blogs.php">Blogs</a></li>-->
+
+                   </ul>
+
+                 </div>
+
+               </li>    
+
+
+
+               <li class="">
+
+                  <div class="dropdown">
+
+                   <button class="btn btn-default dropdown-toggle dropdn-btn-css" type="button" id="menu1" data-toggle="dropdown">Careers
+
+                   <span class="caret"></span></button>
+
+                   <ul class="dropdown-menu menubar-css" role="menu" aria-labelledby="menu1">
+
+                     <li class="mob-menu-dropdn"><a class="hovr-link-css" routerLink="life-at-jindal">Life at JSC</a></li>
+
+                     <li class="mob-menu-dropdn"><a class="hovr-link-css" routerLink="join-team">Join our team</a></li>
+
+                   </ul>
+
+                 </div>
+
+               </li>                          
+
+
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/contact">Contact</a>
+
+               </li>
+
+            </ul>
+
+         </nav>
+
+
+
+      </div>
+
+   </div>
+
+   <!-- End side menu -->
+
+</header>   
+
+<!-- header -->   
+
+   
+
+<!-- header -->
+
+   
+<!-- header -->
+
+  
+
+   <!-- header -->
+
+<header class="site-header">
+
+   <nav class="navbar navbar-expand-lg center-brand static-nav">
+
+      <div class="container">
+
+         <a class="navbar-brand" routerLink="/home">
+
+            <img src="assets/images/logo.svg" alt="logo">
+
+         </a>
+
+         <button class="navbar-toggler navbar-toggler-right collapsed d-none" type="button" data-toggle="collapse" data-target="#xenav">
+
+            <span> </span>
+
+            <span> </span>
+
+            <span> </span>
+
+         </button>
+
+         <div class="collapse navbar-collapse" id="xenav">
+
+            <ul class="navbar-nav" id="container">
+
+               <li class="nav-item">
+
+                  <a class="nav-link" roterLink="/home"><i class="fa fa-home ico-size"></i></a>
+
+               </li>  
+
+               <li class="nav-item">
+
+                  <div class="dropdown">
+
+                    <button class="header-menu-items">About us <i class='fas fa-angle-down' style='font-size:15px'></i></button>
+
+                    <div class="dropdown-content">
+
+                        <a class="nav-link" routerLink="/about-us">About us</a>
+
+                        <a class="nav-link" routerLink="/vision-mission-values">Vision Mission Values</a>
+
+                        <!--<a class="nav-link" href="leadership.php">Leadership</a>-->
+
+                    </div>
+
+                  </div>
+
+               </li>
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/expertise">Expertise</a>
+
+               </li>
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/applications">Applications</a>
+
+               </li>
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/products">Products</a>
+
+               </li>               
+
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/sustainability">Sustainability</a>
+
+               </li>
+
+
+
+               <li class="nav-item">
+
+                  <div class="dropdown">
+
+                    <button class="header-menu-items">Media <i class='fas fa-angle-down' style='font-size:15px'></i></button>
+
+                    <div class="dropdown-content">
+
+                        <a class="nav-link" routerLink="/news">News</a>  
+
+                        <a class="nav-link" href=""></a>                                            
+
+                        <!--<a class="nav-link" href="reports.php">Reports</a>
+
+                        <a class="nav-link" href="insights.php">Insights</a> -->
+
+                        <a class="nav-link" routerLink="/blogs">Blogs</a>
+
+                    </div>
+
+                  </div>
+
+               </li>
+
+
+               <li class="nav-item">
+
+                  <div class="dropdown">
+
+                    <button class="header-menu-items">Careers <i class='fas fa-angle-down' style='font-size:15px'></i></button>
+
+                    <div class="dropdown-content">
+
+                      <a class="nav-link" routerLink="life-at-jindal">Life at JSC</a>
+
+                      <a class="nav-link" routerLink="join-team">Join our team</a>
+
+                    </div>
+
+                  </div>
+
+               </li>               
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="contact" style="margin-right: 15px;">Contact</a>
+
+               </li>
+
+            </ul>
+
+         </div>
+
+      </div>
+
+
+
+      <!--side menu open button-->
+
+      <a href="javascript:void(0)" class="d-lg-inline-block sidemenu_btn" id="sidemenu_toggle">
+
+         <span></span> <span></span> <span></span>
+
+      </a>
+
+   </nav>
+
+
+
+   <!-- side menu -->
+
+   <div class="side-menu gradient_bg_two">
+
+      <div class="inner-wrapper">
+
+         <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
+
+         <nav class="side-nav w-100">
+
+            <ul class="navbar-nav">
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/home">Home</a>
+
+               </li>   
+
+               <li class="">
+
+                  <div class="dropdown">
+
+                   <button class="btn btn-default dropdown-toggle dropdn-btn-css" type="button" id="menu1" data-toggle="dropdown">About us 
+
+                   <span class="caret"></span></button>
+
+                   <ul class="dropdown-menu menubar-css" role="menu" aria-labelledby="menu1">
+
+                        <li class="mob-menu-dropdn"><a class="hovr-link-css" routerLink="/about-us">About us </a></li>
+
+                        <li class="mob-menu-dropdn"><a class="hovr-link-css" routerLink="/vision-mission-values">Vision Mission Values</a></li>
+
+                        <!--<li class="mob-menu-dropdn"><a class="hovr-link-css" href="leadership.php">Leadership</a></li>-->
+
+                   </ul>
+
+                 </div>
+
+               </li>  
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/expertise">Expertise</a>
+
+               </li>
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/applications">Applications</a>
+
+               </li>
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/products">Products</a>
+
+               </li>
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/sustainability">Sustainability</a>
+
+               </li>
+
+
+
+               <li class="">
+
+                  <div class="dropdown">
+
+                   <button class="btn btn-default dropdown-toggle dropdn-btn-css" type="button" id="menu1" data-toggle="dropdown">Media
+
+                   <span class="caret"></span></button>
+
+                   <ul class="dropdown-menu menubar-css" role="menu" aria-labelledby="menu1">
+
+                        <li class="mob-menu-dropdn"><a class="hovr-link-css" routerLink="/news">News</a></li>                     
+
+                        <!--<li class="mob-menu-dropdn"><a class="hovr-link-css" href="reports.php">Reports</a></li>
+
+                        <li class="mob-menu-dropdn"><a class="hovr-link-css" href="insights.php">Insights</a></li>
+
+                        <li class="mob-menu-dropdn"><a class="hovr-link-css" href="blogs.php">Blogs</a></li>-->
+
+                   </ul>
+
+                 </div>
+
+               </li>    
+
+
+
+               <li class="">
+
+                  <div class="dropdown">
+
+                   <button class="btn btn-default dropdown-toggle dropdn-btn-css" type="button" id="menu1" data-toggle="dropdown">Careers
+
+                   <span class="caret"></span></button>
+
+                   <ul class="dropdown-menu menubar-css" role="menu" aria-labelledby="menu1">
+
+                     <li class="mob-menu-dropdn"><a class="hovr-link-css" routerLink="life-at-jindal">Life at JSC</a></li>
+
+                     <li class="mob-menu-dropdn"><a class="hovr-link-css" routerLink="join-team">Join our team</a></li>
+
+                   </ul>
+
+                 </div>
+
+               </li>                          
+
+
+
+               <li class="nav-item">
+
+                  <a class="nav-link" routerLink="/contact">Contact</a>
+
+               </li>
+
+            </ul>
+
+         </nav>
+
+
+
+      </div>
+
+   </div>
+
+   <!-- End side menu -->
+
+</header>   
+
+<!-- header -->   
+
+   
+
+<!-- header -->
+
 
 
   <router-outlet></router-outlet>
@@ -8,17 +604,17 @@
 
   <!--Site Footer Here-->
 
-  <footer id="site-footer" class="bg-black padding_half animated fadeInUp" data-animation="fadeInUp"
-    data-wow-duration="3000ms" data-wow-delay="900ms">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-12 col-sm-12 text-center">
-          <!-- Footer Logo Start -->
-          <div class="footer-logo">
-            <a href="index.php"><img src="assets/images/footer-logo.png" alt="Logo Black"></a><br>
-          </div>
-          <!-- Footer Logo End -->
-          <!-- Contact Info Start -->
+   <footer id="site-footer" class="bg-black padding_half animated fadeInUp" data-animation="fadeInUp" data-wow-duration="3000ms"
+      data-wow-delay="900ms">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+               <!-- Footer Logo Start -->
+               <div class="footer-logo">
+                  <a routerLink="/home"><img src="assets/images/footer-logo.png" alt="Logo Black"></a><br>
+               </div>
+               <!-- Footer Logo End -->
+               <!-- Contact Info Start -->
 
           <div class="contact-info" style="margin: 10px;">
             <p class="white-color">"Jindal House" Opp. Shivranjani Shyamal 132 Ft Ring Road, Satellite, Ahmedabad
@@ -44,44 +640,44 @@
 
           <!-- Footer Nav Start -->
 
-          <p class="footer-link-heading fw700" style="color: #cc1b74;">SITE LINKS</p>
-          <ul class="footer-links lh-30">
-            <li><a href="index.php" class="white-color">Home</a></li>
-            <li><a href="about-us.php" class="white-color">About Us</a></li>
-            <li><a href="expertise.php" class="white-color">Expertise</a></li>
-            <li><a href="applications.php" class="white-color">Applications</a></li>
-            <li><a href="products.php" class="white-color">Products</a></li>
-            <li><a href="sustainability.php" class="white-color">Sustainability</a></li>
-          </ul>
-          <!-- Footer Nav End -->
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-12">
-          <!-- Footer Nav Start -->
-          <p class="footer-link-heading fw700 f-paragraph-color">MEDIA</p>
-          <ul class="footer-links lh-30">
-            <li><a href="news.php" class="white-color">News</a></li>
-            <!--<li><a href="reports.php">Reports</a></li>
+               <p class="footer-link-heading fw700" style="color: #cc1b74;">SITE LINKS</p>
+               <ul class="footer-links lh-30">
+                  <li><a roterLink="/home" class="white-color">Home</a></li>
+                  <li><a roterLink="/about-us" class="white-color">About Us</a></li>
+                  <li><a roterLink="/expertise" class="white-color">Expertise</a></li>
+                  <li><a roterLink="/applications" class="white-color">Applications</a></li>
+                  <li><a roterLink="/products" class="white-color">Products</a></li>
+                  <li><a roterLink="/sustainability" class="white-color">Sustainability</a></li>
+               </ul>
+               <!-- Footer Nav End -->
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+               <!-- Footer Nav Start -->
+               <p class="footer-link-heading fw700 f-paragraph-color">MEDIA</p>
+               <ul class="footer-links lh-30">
+                  <li><a routerLink="/news" class="white-color">News</a></li>
+                  <!--<li><a href="reports.php">Reports</a></li>
                            <li><a href="insights.php">Insights</a></li>
                            <li><a href="blogs.php">Blogs</a></li>-->
-          </ul>
-          <!-- Footer Nav End -->
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <!-- Footer Nav Start -->
-          <p class="footer-link-heading fw700 f-paragraph-color">CAREERS</p>
-          <ul class="footer-links lh-30">
-            <li><a href="life-at-jindal.php" class="white-color">Life at Jindal Speciality Chemicals India</a></li>
-            <li><a href="join-team.php" class="white-color">Join our team</a></li>
-          </ul>
-          <!-- Footer Nav End -->
-        </div>
-        <div class="col-12 text-center bg-bottm text-center">
-          <!-- Copyright Start -->
-          <div class="copyright"> &copy; 2022 Jindal Speciality Chemical, All Rights
-            Reserved.</div>
-          <!-- Copyright End -->
-        </div>
-      </div>
+               </ul>
+               <!-- Footer Nav End -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+               <!-- Footer Nav Start -->
+               <p class="footer-link-heading fw700 f-paragraph-color">CAREERS</p>
+               <ul class="footer-links lh-30">
+                  <li><a routerLink="/life-at-jindal" class="white-color">Life at Jindal Speciality Chemicals India</a></li>
+                  <li><a routerLink="/join-team" class="white-color">Join our team</a></li>
+               </ul>
+               <!-- Footer Nav End -->
+            </div>
+            <div class="col-12 text-center bg-bottm text-center">
+               <!-- Copyright Start -->
+               <div class="copyright"> &copy; 2022 Jindal Speciality Chemical, All Rights
+                  Reserved.</div>
+               <!-- Copyright End -->
+            </div>
+         </div>
 
     </div>
 
