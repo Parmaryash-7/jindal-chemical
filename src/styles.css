@@ -179,6 +179,10 @@
     font-size: var(--paragraph-font-size);
 }
 
+.p_text {
+    font-size: var(--link-font-size);
+}
+
 .text-capitalize {
     text-transform: capitalize;
 }
@@ -203,6 +207,16 @@
     color: #fff;
 }
 
+.color-two {
+    color: #84298B;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
 .heading-title h2 {
     font-weight: 300;
     line-height: normal;
@@ -214,6 +228,10 @@
 
 .top30 {
     margin-top: 30px;
+}
+
+.bottom15 {
+    margin-bottom: 15px;
 }
 
 .bottom20 {
