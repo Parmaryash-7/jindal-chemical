@@ -1837,7 +1837,10 @@ ul.rounded li::before,
       display: none;
 
    }
-
+   .center-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 }
 
 
