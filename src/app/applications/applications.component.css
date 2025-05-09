@@ -117,6 +117,11 @@ h3 {
         z-index: 1;
         margin-top: -100px;
     }
+
+    .center-brand[_ngcontent-pkt-c0] {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }
 
 

@@ -1528,33 +1528,33 @@ button:focus-visible {
 }
 
 @media only screen and (max-width: 1680px) {
-    html {
+    /* html {
         font-size: 15px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 1450px) {
-    html {
+    /* html {
         font-size: 14px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 1366px) {
-    html {
+    /* html {
         font-size: 13px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 1152px) {
-    html {
+    /* html {
         font-size: 12px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 1024px) {
-    html {
+    /* html {
         font-size: 11px;
-    }
+    } */
 
 }
 
