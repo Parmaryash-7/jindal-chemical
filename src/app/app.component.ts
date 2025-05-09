@@ -19,10 +19,8 @@ export class AppComponent {
   }
 
   toggleMenu(e: any) {
-    // if (window.outerWidth <= 1280) {
     this.isMenuOpen = !this.isMenuOpen;
     console.log('object');
-    // }
   }
 
   ngOnInit() {
