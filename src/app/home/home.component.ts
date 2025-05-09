@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
 
     this.swiper = new Swiper(".swiper-container", {
       slidesPerView: 1,
-      spaceBetween: 5000,
+      spaceBetween: 3000,
       speed: 1000,
       navigation: {
         nextEl: ".swiper-button-next",
