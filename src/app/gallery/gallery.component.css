@@ -33,7 +33,7 @@ h2 {
     font-size: 3.5rem;
 }
 
-.news_item:hover h3,
+.gallery_item:hover h3,
 .meta-tags li a:hover,
 .meta-tags li a:focus,
 .widget_search .input-group-addon {
@@ -60,7 +60,7 @@ p.greycolor {
     padding-left: 15px;
 }
 
-.news_item .news_desc {
+.gallery_item .news_desc {
     padding: 40px 30px;
     margin-bottom: 50px;
     z-index: 1;
@@ -315,7 +315,7 @@ p.card-text {
         width: calc(100% / 2.5);
     }
 
-    .news_item .news_desc {
+    .gallery_item .news_desc {
         padding: 30px 15px;
     }
 
@@ -407,16 +407,16 @@ p.card-text {
         max-width: 100%;
     }
 
-    .news_item.shadow {
+    .gallery_item.shadow {
         box-shadow: unset;
     }
 
-    .news_item .news_desc {
+    .gallery_item .news_desc {
         padding: 0;
         margin-bottom: 0;
     }
 
-    .news_item {
+    .gallery_item {
         background: transparent;
     }
 }
