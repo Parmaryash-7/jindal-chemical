@@ -1598,11 +1598,11 @@ ul.rounded li::before,
 
 @media (max-width: 1200px) {
 
-   .navbar-expand-lg .navbar-collapse {
+   /* .navbar-expand-lg .navbar-collapse {
 
       display: none !important;
 
-   }
+   } */
 
 }
 
@@ -1676,6 +1676,15 @@ ul.rounded li::before,
 
    }
 
+   .navbar-nav .nav-link {
+
+      font-size: 13px;
+
+   }
+
+}
+
+@media only screen and (max-width:991px) {
    .center-brand .navbar-brand {
 
       position: relative;
@@ -1691,12 +1700,6 @@ ul.rounded li::before,
       -o-transform: translateY(0);
 
       transform: translateY(0);
-
-   }
-
-   .navbar-nav .nav-link {
-
-      font-size: 13px;
 
    }
 

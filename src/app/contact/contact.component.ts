@@ -11,7 +11,7 @@ export class ContactComponent implements OnInit {
   formSubmitted: boolean = false;
 
   contactForm = new FormGroup({
-    name: new FormControl('', [Validators.required]),
+    name: new FormControl('', [Validators.required, Validators.minLength(3)]),
     email: new FormControl('', [Validators.required, Validators.email]),
     mobile_no: new FormControl('', [
       Validators.required,

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, MinLengthValidator, Validators } from '@angular/forms';
 import Swiper, { Autoplay, Mousewheel, Navigation, Pagination } from "swiper";
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   formSubmitted: boolean = false;
 
   contactForm = new FormGroup({
-    name: new FormControl('', [Validators.required]),
+    name: new FormControl('', [Validators.required, Validators.minLength(3)]),
     email: new FormControl('', [Validators.required, Validators.email]),
     mobile_no: new FormControl('', [
       Validators.required,

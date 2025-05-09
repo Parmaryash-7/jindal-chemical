@@ -778,6 +778,14 @@ ul.rounded li::before,
     cursor: pointer;
 }
 
+.nav-link:hover,
+.nav-link:focus,
+.footer-link:focus,
+.footer-link:hover,
+.sidebar-nav .nav-link.active {
+    color: #ee3557 !important;
+}
+
 .button::after,
 
 .owl-dots .owl-dot::after,
@@ -1766,4 +1774,11 @@ button:focus-visible {
     text-align: center;
     line-height: 40px;
     transition: all .4s ease-in;
+}
+
+
+
+.contact_form .form_group.has-error .input_wrapper input {
+    border-color: red !important;
+    color: red !important;
 }

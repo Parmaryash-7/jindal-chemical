@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -30,4 +31,13 @@ export class AppComponent {
       }
     })
   }
+
+  constructor(private router: Router) {
+    router.events.subscribe((e) => {
+      if (e instanceof NavigationEnd) {
+        window.scrollTo(0, 0);
+      }
+    })
+  }
+
 }
