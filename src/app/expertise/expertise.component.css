@@ -17,6 +17,10 @@
     padding-top: 1.5rem;
 }
 
+.lh-22{
+    line-height: 22px;
+}
+
 section {
     position: relative;
 }
@@ -203,6 +207,31 @@ p.card-text {
     width: 60%;
     margin: auto;
 }
+.darkcolor, .extradark-color {
+    color: #212331;
+}
+.font-light {
+    font-weight: 300;
+}
+.bottom10 {
+    margin-bottom: 10px;
+}
+.bottom35 {
+    margin-bottom: 35px;
+}
+.expertise-list-style {
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #2d2d2d73;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.effect-hover {
+    -webkit-transition: all .7s ease-in .3s;
+    width: 60px;
+}
 
 .tabs {
     background: none;
@@ -260,6 +289,10 @@ p.card-text {
 
 h2 {
     color: #1e90ff;
+}
+
+.mobile-600scale{
+    display: none;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -389,6 +422,24 @@ h2 {
 
 @media only screen and (max-width: 540px) {
 
+    .mobile-600scale{
+        display: block !important;
+    }
+
+    .top10 {
+    margin-top: 10px;
+}
+
+    .mob-view-rnd {
+        background: #ffffff;
+        box-shadow: 0 0px 5px rgb(0 0 0 / 58%);
+        transition: all .5s ease-in;
+        padding: 1rem 15px;
+        border-radius: 10px;
+        color: black;
+        border: 2px solid #ca1975;
+        text-align: center;
+    }
     .container {
         width: 96%;
         max-width: 100%;
