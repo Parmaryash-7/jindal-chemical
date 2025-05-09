@@ -1,17 +1,13 @@
-<div class="jindal_chemical_wrapper">
+<div class="jindal_chemical_wrapper" style="overflow: hidden;">
 
 
    <!--PreLoader-->
 
    <div class="loader">
-
-         <div class="loader-inner">
-
-            <div class="circle"></div>
-
-         </div>
-
+      <div class="loader-inner">
+         <div class="circle"></div>
       </div>
+   </div>
 
    <!--PreLoader Ends-->
 
@@ -188,7 +184,7 @@
 
                   <li class="nav-item">
 
-                     <a class="nav-link" routerLink="">Home</a>
+                     <a class="nav-link" (click)="toggleMenu($event)" routerLink="">Home</a>
 
                   </li>
 
@@ -203,10 +199,11 @@
 
                         <ul class="dropdown-menu menubar-css" role="menu" aria-labelledby="menu1">
 
-                           <li class="mob-menu-dropdn"><a class="hovr-link-css" routerLink="/about-us">About us </a>
+                           <li class="mob-menu-dropdn"><a class="hovr-link-css" (click)="toggleMenu($event)"
+                                 routerLink="/about-us">About us </a>
                            </li>
 
-                           <li class="mob-menu-dropdn"><a class="hovr-link-css"
+                           <li class="mob-menu-dropdn"><a class="hovr-link-css" (click)="toggleMenu($event)"
                                  routerLink="/vision-mission-values">Vision Mission Values</a></li>
 
                            <!--<li class="mob-menu-dropdn"><a class="hovr-link-css" href="leadership.php">Leadership</a></li>-->
@@ -219,25 +216,25 @@
 
                   <li class="nav-item">
 
-                     <a class="nav-link" routerLink="/expertise">Expertise</a>
+                     <a class="nav-link" (click)="toggleMenu($event)" routerLink="/expertise">Expertise</a>
 
                   </li>
 
                   <li class="nav-item">
 
-                     <a class="nav-link" routerLink="/applications">Applications</a>
+                     <a class="nav-link" (click)="toggleMenu($event)" routerLink="/applications">Applications</a>
 
                   </li>
 
                   <li class="nav-item">
 
-                     <a class="nav-link" routerLink="/products">Products</a>
+                     <a class="nav-link" (click)="toggleMenu($event)" routerLink="/products">Products</a>
 
                   </li>
 
                   <li class="nav-item">
 
-                     <a class="nav-link" routerLink="/sustainability">Sustainability</a>
+                     <a class="nav-link" (click)="toggleMenu($event)" routerLink="/sustainability">Sustainability</a>
 
                   </li>
 
@@ -254,7 +251,8 @@
 
                         <ul class="dropdown-menu menubar-css" role="menu" aria-labelledby="menu1">
 
-                           <li class="mob-menu-dropdn"><a class="hovr-link-css" routerLink="/news">News</a></li>
+                           <li class="mob-menu-dropdn"><a class="hovr-link-css" (click)="toggleMenu($event)"
+                                 routerLink="/news">News</a></li>
 
                            <!--<li class="mob-menu-dropdn"><a class="hovr-link-css" href="reports.php">Reports</a></li>
 
@@ -281,10 +279,12 @@
 
                         <ul class="dropdown-menu menubar-css" role="menu" aria-labelledby="menu1">
 
-                           <li class="mob-menu-dropdn"><a class="hovr-link-css" routerLink="life-at-jindal">Life at
+                           <li class="mob-menu-dropdn"><a class="hovr-link-css" (click)="toggleMenu($event)"
+                                 routerLink="/life-at-jindal">Life at
                                  JSC</a></li>
 
-                           <li class="mob-menu-dropdn"><a class="hovr-link-css" routerLink="join-team">Join our team</a>
+                           <li class="mob-menu-dropdn"><a class="hovr-link-css" (click)="toggleMenu($event)"
+                                 routerLink="/join-team">Join our team</a>
                            </li>
 
                         </ul>
@@ -297,7 +297,7 @@
 
                   <li class="nav-item">
 
-                     <a class="nav-link" routerLink="/contact">Contact</a>
+                     <a class="nav-link" (click)="toggleMenu($event)" routerLink="/contact">Contact</a>
 
                   </li>
 
@@ -344,7 +344,7 @@
                <!-- Contact Info End -->
                <!-- Footer Social Icons Start -->
 
-               <ul class="social-icons bottom25" >
+               <ul class="social-icons bottom25">
                   <li><a href="https://facebook.com/JindalCompanies" target="_blank"><i class="fab fa-facebook-f"></i>
                      </a> </li>
                   <li><a href="https://www.instagram.com/jindalcompanies" target="_blank"><i

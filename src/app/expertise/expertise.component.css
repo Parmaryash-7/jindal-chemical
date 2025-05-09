@@ -17,7 +17,7 @@
     padding-top: 1.5rem;
 }
 
-.lh-22{
+.lh-22 {
     line-height: 22px;
 }
 
@@ -197,18 +197,24 @@ p.card-text {
     width: 60%;
     margin: auto;
 }
-.darkcolor, .extradark-color {
+
+.darkcolor,
+.extradark-color {
     color: #212331;
 }
+
 .font-light {
     font-weight: 300;
 }
+
 .bottom10 {
     margin-bottom: 10px;
 }
+
 .bottom35 {
     margin-bottom: 35px;
 }
+
 .expertise-list-style {
     padding: 5px 5px 5px 5px;
     border: 1px solid #2d2d2d73;
@@ -298,7 +304,7 @@ h2 {
     color: #1e90ff;
 }
 
-.mobile-600scale{
+.mobile-600scale {
     display: none;
 }
 
@@ -429,13 +435,18 @@ h2 {
 
 @media only screen and (max-width: 540px) {
 
-    .mobile-600scale{
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-600scale {
         display: block !important;
     }
 
     .top10 {
-    margin-top: 10px;
-}
+        margin-top: 10px;
+    }
 
     .mob-view-rnd {
         background: #ffffff;
@@ -447,6 +458,7 @@ h2 {
         border: 2px solid #ca1975;
         text-align: center;
     }
+
     .container {
         width: 96%;
         max-width: 100%;
