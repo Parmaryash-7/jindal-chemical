@@ -739,6 +739,10 @@ ul.rounded li::before,
 
 }
 
+.nav-link {
+    cursor: pointer;
+}
+
 .button::after,
 
 .owl-dots .owl-dot::after,
