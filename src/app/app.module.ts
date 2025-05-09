@@ -14,6 +14,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { VmvComponent } from './vmv/vmv.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NewsComponent } from './news/news.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     JoinTeamComponent,
     ContactComponent,
     AboutUsComponent,
-    VmvComponent
+    VmvComponent,
+    NewsComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
