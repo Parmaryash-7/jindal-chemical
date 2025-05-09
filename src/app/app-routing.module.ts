@@ -10,6 +10,8 @@ import { LifeAtJindalComponent } from "./life-at-jindal/life-at-jindal.component
 import { SustainabilityComponent } from "./sustainability/sustainability.component";
 import { ProductsComponent } from "./products/products.component";
 import { ContactComponent } from "./contact/contact.component";
+import { NewsComponent } from "./news/news.component";
+import { GalleryComponent } from "./gallery/gallery.component";
 
 const routes: Routes = [
   {
@@ -41,16 +43,24 @@ const routes: Routes = [
     component: LifeAtJindalComponent,
   },
   {
-    path:"sustainability",
+    path: "sustainability",
     component: SustainabilityComponent
   },
   {
-    path:"products",
+    path: "products",
     component: ProductsComponent
   },
   {
-    path:"contact",
+    path: "contact",
     component: ContactComponent
+  },
+  {
+    path: "news",
+    component: NewsComponent
+  },
+  {
+    path: "gallery-2022",
+    component: GalleryComponent
   },
 ];
 
@@ -58,4 +68,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
