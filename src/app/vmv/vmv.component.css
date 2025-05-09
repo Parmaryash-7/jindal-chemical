@@ -47,6 +47,7 @@ h2 {
 .main-heading {
     font-family: var(--bold-font-family);
     font-weight: 800;
+    margin-top: 12px;
 }
 
 h3 {
@@ -128,7 +129,8 @@ p.greycolor {
 }
 
 .heading-title {
-    font-size: 2rem;
+    font-size: 1.563rem;
+    color: black;
 }
 
 .block {
@@ -138,6 +140,41 @@ p.greycolor {
 i {
     vertical-align: middle;
     font-size: 1rem;
+}
+
+.p_text {
+    border: 2px solid #d7246a !important;
+    border-radius: 16px;
+    margin: 0 15px;
+
+    .heading-title {
+        padding: 15px;
+    }
+}
+
+li a::before {
+    background: #cd1a72;
+    border-radius: 50px;
+}
+
+.desk_display {
+    display: block;
+}
+
+.tab_display {
+    display: none;
+}
+
+.card-wrap {
+    padding: 15px;
+}
+
+p.card-text {
+    font-size: 13px;
+}
+
+.d_block {
+    margin: 5px 0;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -243,9 +280,38 @@ i {
         padding-top: 30px;
         padding-bottom: 25px;
     }
+
+    .desk_display {
+        display: none;
+    }
+
+    .tab_display {
+        display: grid;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .grid_c-1-1.content {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .card-wrap {
+        padding: 8px;
+    }
 }
 
 @media only screen and (max-width: 540px) {
+
+    .container {
+        width: 96%;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
 
     .image,
     .image img {
@@ -266,6 +332,16 @@ i {
         background: transparent;
         border-radius: 0;
         padding-top: 20px;
+    }
+
+    .p_text {
+        border: 1px solid #d7246a !important;
+        /* border-radius: 16px; */
+        margin: 0;
+    }
+
+    .p_text .heading-title {
+        padding: 6px;
     }
 }
 
