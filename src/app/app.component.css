@@ -1737,7 +1737,6 @@ ul.rounded li::before,
 }
 
 
-
 @media (max-width: 992px) {
 
    .boxed-nav {
@@ -1947,6 +1946,11 @@ ul.social-icons li a::before {
    width: 40px;
    text-align: center;
    line-height: 40px;
+}
+
+.back-top, .back-top:hover, .back-top:focus, ul.social-icons li a::before {
+   background: rgb(155 210 48 / 90%);
+   border-radius: 50px;
 }
 
 /*----- Footer ends -----*/
