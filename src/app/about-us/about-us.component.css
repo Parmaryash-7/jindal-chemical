@@ -1,0 +1,53 @@
+.page-header {
+    background-image: url('src/assets/images/about-us.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0px;
+}
+
+.center-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.padding_top {
+    padding-top: 7.5rem;
+}
+
+section {
+    position: relative;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .padding_top {
+        padding-top: 3.5rem;
+    }
+
+    .bottom35 {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:767px) {}
+
+@media only screen and (max-width: 370px) {
+
+    .container {
+        max-width: 100%;
+    }
+}
