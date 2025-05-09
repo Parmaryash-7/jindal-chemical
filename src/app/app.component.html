@@ -152,7 +152,7 @@
 
          <!--side menu open button-->
 
-         <a href="javascript:void(0)" class="d-lg-inline-block sidemenu_btn" id="sidemenu_toggle">
+         <a (click)="toggleMenu($event)" class="d-lg-inline-block sidemenu_btn" id="sidemenu_toggle">
 
             <span></span> <span></span> <span></span>
 
@@ -164,7 +164,7 @@
 
       <!-- side menu -->
 
-      <div class="side-menu gradient_bg_two">
+      <div class="side-menu gradient_bg_two" [class.side-menu-active]="isMenuOpen">
 
          <div class="inner-wrapper">
 
@@ -461,7 +461,7 @@
 
          <!--side menu open button-->
 
-         <a href="javascript:void(0)" class="d-lg-inline-block sidemenu_btn" id="sidemenu_toggle">
+         <a (click)="toggleMenu($event)" class="d-lg-inline-block sidemenu_btn" id="sidemenu_toggle">
 
             <span></span> <span></span> <span></span>
 
