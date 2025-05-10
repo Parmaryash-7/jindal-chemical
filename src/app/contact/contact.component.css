@@ -140,8 +140,6 @@ h2 {
         .form_group {
             grid-column: 1 / span 2;
         }
-
-
     }
 
     .grid {
@@ -173,5 +171,14 @@ h2 {
 
     .container {
         max-width: 100%;
+    }
+
+    .padding_top {
+        padding-top: 1.5rem;
+    }
+
+    .container-padding {
+        padding-right: 0;
+        padding-left: 0;
     }
 }

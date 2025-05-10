@@ -343,6 +343,22 @@ p.card-text {
     .p_text .heading-title {
         padding: 6px;
     }
+
+    .padding_top {
+        padding-top: 1.5rem;
+    }
+
+    .padding_top_half {
+        padding-top: 1.375rem;
+    }
+
+    .breadcrumb{
+        padding: 0;
+        font-size: 12px;
+    }
+    h2{
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (max-width: 370px) {
