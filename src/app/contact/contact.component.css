@@ -144,7 +144,7 @@ h2 {
 
 
     .grid {
-        gap: 5rem;
+        gap: 0;
     }
 
     .input_wrapper {

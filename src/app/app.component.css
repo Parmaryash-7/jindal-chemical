@@ -1501,7 +1501,6 @@ ul.rounded li::before,
       padding-bottom: 25px;
 
    }
-
 }
 
 @media (min-width: 1200px) {
@@ -1725,6 +1724,11 @@ ul.rounded li::before,
 
    }
 
+
+   .dropdn-btn-css {
+      font-size: 1.8rem;
+   }
+
 }
 
 
@@ -1918,8 +1922,8 @@ footer ul.social-icons li a {
 
 }
 
-footer ul.social-icons li a:hover{
-      background: linear-gradient(90deg, #ffe7e2 31%, #ffd0b0 69%) !important;
+footer ul.social-icons li a:hover {
+   background: linear-gradient(90deg, #ffe7e2 31%, #ffd0b0 69%) !important;
 }
 
 /* footer ul.social-icons:not(.small) li a {
