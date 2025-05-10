@@ -12,6 +12,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         pointer-events: none;
+        width: 100%;
     }
 
     h1 {
@@ -314,17 +315,12 @@
 }
 
 @media screen and (max-width:991px) {
-    .section5 .d-flex {
-        /* flex-direction: column; */
-    }
-}
-
-@media screen and (max-width:767px) {
-
     .section5 {
         .img_container {
             /* justify-content: unset; */
             /* height: fit-content; */
+            gap: 20px;
+            margin-bottom: 20px;
         }
 
         .cbp-item-wrapper {
@@ -334,6 +330,7 @@
 
         /* flex-direction: column; */
     }
+
 
     .cbp-item-wrapper .overlay {
         opacity: 1;
@@ -349,6 +346,9 @@
     .cbp-item-wrapper .overlay h4 {
         font-size: 1.2rem;
     }
+}
+
+@media screen and (max-width:767px) {
 
     .grid {
         gap: 5rem;
