@@ -29,7 +29,8 @@ export class ExpertiseComponent implements OnInit {
   ngOnInit() {
     this.route.fragment.subscribe(fragment => {
       if (fragment) {
-        const targetTab = this.tabs.find(tab => this.fragmentToId(fragment) === tab.id);
+        const decoded = decodeURIComponent(fragment);
+        const targetTab = this.tabs.find(tab => tab.id === decoded);
         if (targetTab) {
           this.activeTab = targetTab.id;
         }
@@ -38,8 +39,7 @@ export class ExpertiseComponent implements OnInit {
   }
 
   fragmentToId(fragment: string): string {
-    const index = parseInt(fragment.replace('tab-', '')) - 1;
-    return this.tabs[index].id || this.tabs[0].id;
+    return decodeURIComponent(fragment);
   }
 
   TECH_LIST = [
