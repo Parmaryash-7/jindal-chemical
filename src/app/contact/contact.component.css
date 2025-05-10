@@ -181,4 +181,8 @@ h2 {
         padding-right: 0;
         padding-left: 0;
     }
+
+    .bottom25 {
+        margin-bottom: 0;
+    }
 }
