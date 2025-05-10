@@ -88,11 +88,12 @@ p.greycolor {
     aspect-ratio: 16/9;
     height: unset !important;
 
-    img {
-        height: unset !important;
-    }
-
 }
+
+.image img {
+    height: unset !important;
+}
+
 
 .d-flex {
     gap: 30px;
@@ -169,9 +170,10 @@ i {
     border-radius: 16px;
     margin: 0 15px;
 
-    .heading-title {
-        padding: 15px;
-    }
+}
+
+.p_text .heading-title {
+    padding: 15px;
 }
 
 li a::before {

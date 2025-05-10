@@ -277,16 +277,17 @@ i {
     }
 
     .breadcrumb {
-    padding: 0;
+        padding: 0;
     }
 
     p.greycolor {
-    line-height: 24px;
-    padding-left: 0;
-}
-.text-center{
-    text-align: left !important;
-}
+        line-height: 24px;
+        padding-left: 0;
+    }
+
+    .text-center {
+        text-align: left !important;
+    }
 }
 
 @media only screen and (max-width: 370px) {
