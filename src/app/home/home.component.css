@@ -133,7 +133,7 @@
     justify-self: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .section4 .right_side img {

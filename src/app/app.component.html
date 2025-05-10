@@ -1,320 +1,168 @@
 <div class="jindal_chemical_wrapper" style="overflow: hidden;">
-
-
    <!--PreLoader-->
-
    <div class="loader">
       <div class="loader-inner">
          <div class="circle"></div>
       </div>
    </div>
-
    <!--PreLoader Ends-->
 
    <!-- header -->
 
    <!-- header -->
-
    <header class="site-header">
-
       <nav class="navbar navbar-expand-lg center-brand static-nav">
-
          <div class="container">
-
             <a class="navbar-brand" routerLink="/">
-
                <img src="assets/images/logo.svg" alt="logo">
-
             </a>
-
             <button class="navbar-toggler navbar-toggler-right collapsed d-none" type="button" data-toggle="collapse"
                data-target="#xenav">
-
                <span> </span>
-
                <span> </span>
-
                <span> </span>
-
             </button>
-
             <div class="collapse navbar-collapse" id="xenav">
-
                <ul class="navbar-nav" id="container">
-
                   <li class="nav-item">
-
                      <a class="nav-link" routerLink="/"><i class="fa fa-home ico-size"></i></a>
-
                   </li>
-
                   <li class="nav-item">
-
                      <div class="dropdown">
-
                         <button class="header-menu-items">About us <i class='fas fa-angle-down'
                               style='font-size:15px'></i></button>
-
                         <div class="dropdown-content">
-
                            <a class="nav-link" routerLink="/about-us">About us</a>
-
                            <a class="nav-link" routerLink="/vision-mission-values">Vision Mission Values</a>
-
                            <!--<a class="nav-link" href="leadership.php">Leadership</a>-->
-
                         </div>
-
                      </div>
-
                   </li>
-
                   <li class="nav-item">
-
                      <a class="nav-link" routerLink="/expertise">Expertise</a>
-
                   </li>
-
                   <li class="nav-item">
-
                      <a class="nav-link" routerLink="/applications">Applications</a>
-
                   </li>
-
                   <li class="nav-item">
-
                      <a class="nav-link" routerLink="/products">Products</a>
-
                   </li>
-
                </ul>
-
                <ul class="navbar-nav ml-auto">
-
                   <li class="nav-item">
-
                      <a class="nav-link" routerLink="/sustainability">Sustainability</a>
-
                   </li>
-
-
-
                   <li class="nav-item">
-
                      <div class="dropdown">
-
                         <button class="header-menu-items">Media <i class='fas fa-angle-down'
                               style='font-size:15px'></i></button>
-
                         <div class="dropdown-content">
-
                            <a class="nav-link" routerLink="/news">News</a>
-
                            <a class="nav-link" href=""></a>
-
                            <!--<a class="nav-link" href="reports.php">Reports</a>
-
                         <a class="nav-link" href="insights.php">Insights</a> -->
-
                            <a class="nav-link" routerLink="/blogs">Blogs</a>
-
                         </div>
-
                      </div>
-
                   </li>
-
-
                   <li class="nav-item">
-
                      <div class="dropdown">
-
                         <button class="header-menu-items">Careers <i class='fas fa-angle-down'
                               style='font-size:15px'></i></button>
-
                         <div class="dropdown-content">
-
                            <a class="nav-link" routerLink="life-at-jindal">Life at JSC</a>
-
                            <a class="nav-link" routerLink="join-team">Join our team</a>
-
                         </div>
-
                      </div>
-
                   </li>
-
                   <li class="nav-item">
-
                      <a class="nav-link" routerLink="contact" style="margin-right: 15px;">Contact</a>
-
                   </li>
-
                </ul>
-
             </div>
-
          </div>
 
-
-
          <!--side menu open button-->
-
          <a (click)="toggleMenu($event)" class="d-lg-inline-block sidemenu_btn visible-tab-mobile" id="sidemenu_toggle">
-
             <span></span> <span></span> <span></span>
-
          </a>
-
       </nav>
-
-
 
       <!-- side menu -->
 
       <div class="side-menu gradient_bg_two" [class.side-menu-active]="isMenuOpen">
-
          <div class="inner-wrapper">
-
             <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
-
             <nav class="side-nav w-100">
-
                <ul class="navbar-nav">
-
                   <li class="nav-item">
-
                      <a class="nav-link" (click)="toggleMenu($event)" routerLink="">Home</a>
-
                   </li>
-
                   <li class="">
-
                      <div class="dropdown">
-
                         <button class="btn btn-default dropdown-toggle dropdn-btn-css" type="button" id="menu1"
                            data-toggle="dropdown">About us
-
                            <span class="caret"></span></button>
-
                         <ul class="dropdown-menu menubar-css" role="menu" aria-labelledby="menu1">
-
                            <li class="mob-menu-dropdn"><a class="hovr-link-css" (click)="toggleMenu($event)"
                                  routerLink="/about-us">About us </a>
                            </li>
-
                            <li class="mob-menu-dropdn"><a class="hovr-link-css" (click)="toggleMenu($event)"
                                  routerLink="/vision-mission-values">Vision Mission Values</a></li>
-
                            <!--<li class="mob-menu-dropdn"><a class="hovr-link-css" href="leadership.php">Leadership</a></li>-->
-
                         </ul>
-
                      </div>
-
                   </li>
-
                   <li class="nav-item">
-
                      <a class="nav-link" (click)="toggleMenu($event)" routerLink="/expertise">Expertise</a>
-
                   </li>
-
                   <li class="nav-item">
-
                      <a class="nav-link" (click)="toggleMenu($event)" routerLink="/applications">Applications</a>
-
                   </li>
-
                   <li class="nav-item">
-
                      <a class="nav-link" (click)="toggleMenu($event)" routerLink="/products">Products</a>
-
                   </li>
-
                   <li class="nav-item">
-
                      <a class="nav-link" (click)="toggleMenu($event)" routerLink="/sustainability">Sustainability</a>
-
                   </li>
-
-
-
                   <li class="">
-
                      <div class="dropdown">
-
                         <button class="btn btn-default dropdown-toggle dropdn-btn-css" type="button" id="menu1"
                            data-toggle="dropdown">Media
-
                            <span class="caret"></span></button>
-
                         <ul class="dropdown-menu menubar-css" role="menu" aria-labelledby="menu1">
-
                            <li class="mob-menu-dropdn"><a class="hovr-link-css" (click)="toggleMenu($event)"
                                  routerLink="/news">News</a></li>
-
                            <!--<li class="mob-menu-dropdn"><a class="hovr-link-css" href="reports.php">Reports</a></li>
-
                         <li class="mob-menu-dropdn"><a class="hovr-link-css" href="insights.php">Insights</a></li>
-
                         <li class="mob-menu-dropdn"><a class="hovr-link-css" href="blogs.php">Blogs</a></li>-->
-
                         </ul>
-
                      </div>
-
                   </li>
-
-
-
                   <li class="">
-
                      <div class="dropdown">
-
                         <button class="btn btn-default dropdown-toggle dropdn-btn-css" type="button" id="menu1"
                            data-toggle="dropdown">Careers
-
                            <span class="caret"></span></button>
-
                         <ul class="dropdown-menu menubar-css" role="menu" aria-labelledby="menu1">
-
                            <li class="mob-menu-dropdn"><a class="hovr-link-css" (click)="toggleMenu($event)"
                                  routerLink="/life-at-jindal">Life at
                                  JSC</a></li>
-
                            <li class="mob-menu-dropdn"><a class="hovr-link-css" (click)="toggleMenu($event)"
                                  routerLink="/join-team">Join our team</a>
                            </li>
-
                         </ul>
-
                      </div>
-
                   </li>
-
-
-
                   <li class="nav-item">
-
                      <a class="nav-link" (click)="toggleMenu($event)" routerLink="/contact">Contact</a>
-
                   </li>
-
                </ul>
-
             </nav>
-
-
-
          </div>
-
       </div>
-
       <!-- End side menu -->
-
    </header>
-
 
    <router-outlet></router-outlet>
 
@@ -345,7 +193,7 @@
                <!-- Contact Info End -->
                <!-- Footer Social Icons Start -->
 
-               <ul class="social-icons bottom25">
+               <ul class="social-icons">
                   <li><a href="https://facebook.com/JindalCompanies" target="_blank"><i class="fab fa-facebook-f"></i>
                      </a> </li>
                   <li><a href="https://www.instagram.com/jindalcompanies" target="_blank"><i
