@@ -202,7 +202,7 @@ jQuery(function ($) {
 
          scrollTop: 0
 
-      }, 700);
+      }, 50);
 
       return false;
 
