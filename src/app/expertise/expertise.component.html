@@ -95,12 +95,16 @@
                                     <div class="tab-content current" id="tab-2" *ngIf="activeTab == 'Technologies'">
                                         <h3 class="text-capitalize font-light darkcolor bottom10" id="chemistry-we-do">
                                             Technologies</h3>
-                                        <p class="sans">We integrate state-of-the-art manufacturing process technologies
+                                        <p class="sans wow animated fadeInUp" data-animation="fadeInUp"
+                                            data-wow-duration="1.5s" data-wow-delay="200ms">We integrate
+                                            state-of-the-art manufacturing process technologies
                                             and
                                             capabilities as well as leverage innovation for all our chemistry processes
                                             to bring consistent value to our customers.</p>
                                         <div class="d-flex technologies top20">
-                                            <div class="block d-flex tech-box" *ngFor="let tech of TECH_LIST">
+                                            <div class="block d-flex tech-box  wow animated fadeInUp"
+                                                data-animation="fadeInUp" data-wow-duration="1.5s"
+                                                data-wow-delay="200ms" *ngFor="let tech of TECH_LIST">
                                                 <div class="icon effect-hover">
                                                     <img [src]="tech.icon" [alt]="tech.text">
                                                 </div>
