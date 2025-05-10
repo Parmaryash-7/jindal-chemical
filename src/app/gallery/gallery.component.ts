@@ -18,6 +18,45 @@ export class GalleryComponent implements OnInit {
     Fancybox.bind('[data-fancybox="gallery"]', {
 
     });
+
+    // setTimeout(() => {
+    //   Fancybox.bind("[data-fancybox='gallery']", {
+    //     Thumbs: {
+    //       autoStart: true,
+    //       type: "modern",
+    //       axis: 'x'
+    //     },
+    //     Toolbar: {
+    //       display: {
+    //         right: ['slideshow', 'fullscreen', 'close'],
+    //         left: ['thumbs']
+    //       }
+    //     }
+    //   });
+    // });
+
+
+    console.log(Fancybox.version);
+
+
+    // Fancybox.bind("[data-fancybox='gallery']", {
+    //   Thumbs: {
+    //     type: "modern",
+    //   },
+    //   Toolbar: {
+    //     display: {
+    //       right: ['slideshow', 'fullscreen', 'close']
+    //     }
+    //   },
+    //   autoStart: true,
+    //   // Carousel: {
+    //   //   transition: "fade",
+    //   // },
+    //   // // Thumbs: false,
+    //   // transitionEffect: "tube",
+    //   // animationEffect: "zoom",
+    //   // fit: 'contain'
+    // });
   }
 
   images = [
@@ -30,21 +69,23 @@ export class GalleryComponent implements OnInit {
   ]
 
   showFancyBox() {
-    //   Fancybox.show(this.images.map(image => ({
-    //     src: image.src,
-    //     thumb: image.thumb,
-    //     caption: image.caption
-    //   })), {
-    //     Carousel: {
-    //       // transition: "fade",
-    //     },
-    //     // Thumbs: false,
-    //     transitionEffect: "tube",
-    //     animationEffect: "zoom",
-    //     fit: "contain",
+    // Fancybox.show(this.images.map(image => ({
+    //   src: image.src,
+    //   thumb: image.thumb,
+    //   caption: image.caption
+    // })), {
+    // Carousel: {
+    // transition: "fade",
+    // },
+    // Thumbs: false,
+    // transitionEffect: "tube",
+    // animationEffect: "zoom",
+    // fit: "contain",
 
-    //   }
-    //   );
+    // }
+    // );
+
+
   }
 
 

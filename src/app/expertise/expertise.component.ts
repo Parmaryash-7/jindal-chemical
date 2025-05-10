@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: "app-expertise",
@@ -6,10 +7,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./expertise.component.css"],
 })
 export class ExpertiseComponent implements OnInit {
-  constructor() { }
-
-  ngOnInit() { }
-  activeTab = "Chemistry";
+  constructor(private route: ActivatedRoute) { }
 
   tabs = [
     {
@@ -25,6 +23,24 @@ export class ExpertiseComponent implements OnInit {
       label: "R & D",
     },
   ];
+
+  activeTab = this.tabs[0].id;
+
+  ngOnInit() {
+    this.route.fragment.subscribe(fragment => {
+      if (fragment) {
+        const targetTab = this.tabs.find(tab => this.fragmentToId(fragment) === tab.id);
+        if (targetTab) {
+          this.activeTab = targetTab.id;
+        }
+      }
+    });
+  }
+
+  fragmentToId(fragment: string): string {
+    const index = parseInt(fragment.replace('tab-', '')) - 1;
+    return this.tabs[index].id || this.tabs[0].id;
+  }
 
   TECH_LIST = [
     {

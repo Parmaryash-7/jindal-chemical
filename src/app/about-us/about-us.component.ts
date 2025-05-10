@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ViewChildren, QueryList, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-your-component',
@@ -6,30 +6,39 @@ import { Component, AfterViewInit } from '@angular/core';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent implements AfterViewInit {
+  @ViewChildren('counter') counters!: QueryList<ElementRef>;
 
-  ngAfterViewInit(): void {
-    this.startCounters();
-  }
 
-  startCounters(): void {
-    const counters = document.querySelectorAll('.heading-title');
+  ngAfterViewInit() {
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target as HTMLElement;
+            const target = +(el.getAttribute('data-target') || '0');
+            let count = 0;
+            const increment = target / 80;
 
-    counters.forEach(counter => {
-      const target = +(counter.getAttribute('data-target') || '0');
-      let count = 0;
-      const increment = target / 50;
+            const updateCount = () => {
+              count += increment;
+              if (count < target) {
+                el.childNodes[0].nodeValue = Math.ceil(count).toString();
+                requestAnimationFrame(updateCount);
+              } else {
+                el.childNodes[0].nodeValue = target.toString();
+              }
+            };
 
-      const updateCount = () => {
-        count += increment;
-        if (count < target) {
-          counter.childNodes[0].nodeValue = Math.ceil(count).toString();
-          requestAnimationFrame(updateCount);
-        } else {
-          counter.childNodes[0].nodeValue = target.toString();
-        }
-      };
+            updateCount();
+            obs.unobserve(el);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
 
-      updateCount();
+    this.counters.forEach(counter => {
+      observer.observe(counter.nativeElement);
     });
   }
 }
