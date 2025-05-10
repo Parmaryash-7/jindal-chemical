@@ -13,12 +13,12 @@ export class SeoServiceService {
       description: 'Welcome to Jindal Speciality Chemicals, a leading manufacturer of fine chemicals serving agriculture, life sciences, pharmaceuticals, and industrial sectors.',
       keywords: 'speciality chemicals, chemical manufacturer India, fine chemicals, Jindal Chemicals, life sciences, industrial solvents',
     },
-    '/about': {
+    '/about-us': {
       title: 'About Jindal Speciality Chemicals | Legacy, Vision & Growth',
       description: 'Discover the story of Jindal Speciality Chemicals – part of the Jindal Group with 3 decades of legacy in innovation, R&D, and sustainable chemical solutions.',
       keywords: 'Jindal Group, chemical company India, speciality chemical manufacturer, company history, Gujarat chemicals, innovation in chemistry',
     },
-    '/vision': {
+    '/vision-mission-values': {
       title: 'Our Vision, Mission & Values | Jindal Speciality Chemicals',
       description: 'Learn about our commitment to innovation, sustainability, and excellence that drives Jindal Speciality Chemicals toward enriching lives through chemistry.',
       keywords: 'chemical company values, sustainability vision, mission in chemicals, Jindal ethics, corporate values',
@@ -43,12 +43,17 @@ export class SeoServiceService {
       description: 'Learn how we integrate sustainability, eco-friendly processes, and green chemistry to reduce carbon footprint and support communities.',
       keywords: 'sustainable chemical manufacturing, green chemistry, eco-friendly processes, CSR chemicals, low carbon footprint',
     },
-    '/media': {
+    '/news': {
       title: 'News & Updates | Jindal Speciality Chemicals',
       description: 'Stay informed with the latest news, press releases, and events from Jindal Speciality Chemicals and the wider Jindal Group.',
       keywords: 'chemical industry news, Jindal updates, press releases chemicals, corporate news, speciality chemical events',
     },
-    '/careers': {
+    '/join-team': {
+      title: 'Careers at Jindal Speciality Chemicals | Join Our Team',
+      description: 'Explore career opportunities at Jindal Speciality Chemicals and become part of an innovation-driven and growth-focused team.',
+      keywords: 'chemical careers India, jobs in chemical industry, work at Jindal, chemical R&D careers, Jindal employment',
+    },
+    '/life-at-jindal': {
       title: 'Careers at Jindal Speciality Chemicals | Join Our Team',
       description: 'Explore career opportunities at Jindal Speciality Chemicals and become part of an innovation-driven and growth-focused team.',
       keywords: 'chemical careers India, jobs in chemical industry, work at Jindal, chemical R&D careers, Jindal employment',
