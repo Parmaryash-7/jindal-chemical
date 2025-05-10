@@ -349,6 +349,11 @@
 }
 
 @media screen and (max-width:767px) {
+    .swiper1 {
+        .text {
+            top: 50%;
+        }
+    }
 
     .grid {
         gap: 5rem;
@@ -413,5 +418,24 @@
     .container-padding {
         padding-right: 1rem;
         padding-left: 2rem;
+    }
+}
+
+@media only screen and (max-width: 486px) {
+    .swiper1 {
+
+
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .swiper1 {
+        h1 {
+            font-size: 20px;
+        }
     }
 }
