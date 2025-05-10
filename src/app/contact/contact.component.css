@@ -147,6 +147,12 @@ h2 {
         gap: 0;
     }
 
+    .container-padding {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
     .input_wrapper {
         /* height: 100px; */
         background: #fff;

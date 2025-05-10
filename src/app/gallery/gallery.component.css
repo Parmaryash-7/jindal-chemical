@@ -415,7 +415,7 @@ p.card-text {
 
     .gallery_item .news_desc {
         padding: 0;
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     }
 
     .gallery_item {

@@ -435,6 +435,10 @@ h2 {
 
 @media only screen and (max-width: 540px) {
 
+    .shadow-inset {
+        box-shadow: none;
+    }
+
     .tabs {
         flex-direction: column;
         align-items: center;
@@ -460,7 +464,7 @@ h2 {
     }
 
     .container {
-        width: 96%;
+        width: 100%;
         max-width: 100%;
     }
 

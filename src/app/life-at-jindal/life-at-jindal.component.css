@@ -69,7 +69,10 @@ h2 {
     font-size: 3.5rem;
 }
 
-.news_item:hover h3, .meta-tags li a:hover, .meta-tags li a:focus, .widget_search .input-group-addon {
+.news_item:hover h3,
+.meta-tags li a:hover,
+.meta-tags li a:focus,
+.widget_search .input-group-addon {
     color: #ca1b75;
 }
 
@@ -95,7 +98,8 @@ h3 {
     margin-bottom: 50px;
 }
 
-p, h3 {
+p,
+h3 {
     color: #777777;
 }
 
@@ -150,8 +154,16 @@ p, h3 {
 
 @media only screen and (max-width: 768px) {
     .career-icon img {
-        height: 50svh;
+        height: 25svh;
         object-fit: contain;
+    }
+
+    .col-sm-6 {
+        max-width: 100% !important;
+    }
+
+    .d-flex {
+        flex-direction: column;
     }
 
     .tab_img img {
@@ -186,7 +198,7 @@ p, h3 {
     }
 
     .career-icon img {
-        height: 25svh;
+        height: 20svh;
     }
 
 

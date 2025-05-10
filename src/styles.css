@@ -253,6 +253,10 @@
     padding: 1rem 15px !important;
 }
 
+.top10 {
+    padding-top: 10px;
+}
+
 .top20 {
     margin-top: 20px;
 }
@@ -1677,6 +1681,12 @@ button:focus-visible {
 }
 
 @media only screen and (max-width: 991px) {
+    .padding_top {
+        padding-top: 1.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
     .visible-tab-mobile {
         display: block !important;
     }
@@ -1749,6 +1759,16 @@ button:focus-visible {
 }
 
 @media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 540px) {
+    .breadcrumb {
+        padding: 0 !important;
+    }
+
+    .padding_top_half {
+        padding-top: 1.375rem !important;
+    }
+}
 
 @media only screen and (max-width: 486px) {
     :root {

@@ -381,7 +381,7 @@ p.card-text {
 
     .news_item .news_desc {
         padding: 0;
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     }
 
     .news_item {
