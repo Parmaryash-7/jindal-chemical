@@ -99,5 +99,19 @@ export class SeoServiceService {
     // Extra SEO
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'author', content: 'Jindal Speciality Chemicals' });
+
+    this.setCanonicalURL(fullUrl);
+  }
+
+  private setCanonicalURL(url: string): void {
+    let link: HTMLLinkElement | null = document.querySelector("link[rel='canonical']");
+    if (link) {
+      link.setAttribute('href', url);
+    } else {
+      link = document.createElement('link');
+      link.setAttribute('rel', 'canonical');
+      link.setAttribute('href', url);
+      document.head.appendChild(link);
+    }
   }
 }
