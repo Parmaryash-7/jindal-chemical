@@ -31,7 +31,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     AboutUsComponent,
     VmvComponent,
     NewsComponent,
-    GalleryComponent
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,

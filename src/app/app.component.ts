@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { Meta, Title } from '@angular/platform-browser';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { SeoServiceService } from './seo-service.service';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -25,6 +28,12 @@ export class AppComponent {
   }
 
   ngOnInit() {
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe((event: NavigationEnd) => {
+        const path = event.urlAfterRedirects.split('?')[0];
+        this.seo.updateMetaTags(path);
+      });
     document.addEventListener('keydown', (e) => {
       if (e.code.toLowerCase() == 'escape') {
         this.isMenuOpen = false;
@@ -32,7 +41,8 @@ export class AppComponent {
     })
   }
 
-  constructor(private router: Router) {
+  constructor(private seo: SeoServiceService,
+    private router: Router) {
     router.events.subscribe((e) => {
       if (e instanceof NavigationEnd) {
         window.scrollTo(0, 0);
