@@ -302,6 +302,28 @@ p, h3 {
         height: 45svh;
         margin: 10px 0;
     }
+
+    .padding_top {
+        padding-top: 1.5rem;
+    }
+
+    .breadcrumb {
+        padding: 0;
+    }
+
+    .popup-gallery-item img {
+        height: 30svh;
+    }
+
+    .feature-item {
+        padding: 10px;
+        border: 2px solid #eaeaea;
+        height: 100%;
+    }
+
+    .feature-item {
+        margin-bottom: 0;
+    }
 }
 
 @media only screen and (max-width: 370px) {
@@ -313,4 +335,6 @@ p, h3 {
     h2 {
         font-size: 2rem;
     }
+
+    
 }

@@ -247,6 +247,14 @@ i {
 
 @media only screen and (max-width: 540px) {
 
+    .padding_top {
+        padding-top: 1.5rem;
+    }
+
+    .padding_top_half {
+        padding-top: 1.375rem;
+    }
+
     .image,
     .image img {
         border-radius: 10px;
@@ -267,6 +275,18 @@ i {
         border-radius: 0;
         padding-top: 20px;
     }
+
+    .breadcrumb {
+    padding: 0;
+    }
+
+    p.greycolor {
+    line-height: 24px;
+    padding-left: 0;
+}
+.text-center{
+    text-align: left !important;
+}
 }
 
 @media only screen and (max-width: 370px) {
