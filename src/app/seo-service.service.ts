@@ -72,7 +72,7 @@ export class SeoServiceService {
     if (!seo) return;
 
     const fullUrl = 'https://www.jindalspecialitychemicals.com' + path;
-    const imageUrl = 'https://www.jindalspecialitychemicals.com/assets/images/opengraph.png';
+    const imageUrl = 'https://www.jindalspecialitychemicals.com/assets/images/Jindal-speciality-chemicals-opengraph.png';
 
     // Basic Meta Tags
     this.title.setTitle(seo.title);
@@ -97,7 +97,7 @@ export class SeoServiceService {
     this.meta.updateTag({ name: 'twitter:creator', content: '@JindalChem' });
 
     // Extra SEO
-    // this.meta.updateTag({ name: 'robots', content: 'index, follow' });
-    // this.meta.updateTag({ name: 'author', content: 'Jindal Speciality Chemicals' });
+    this.meta.updateTag({ name: 'robots', content: 'index, follow' });
+    this.meta.updateTag({ name: 'author', content: 'Jindal Speciality Chemicals' });
   }
 }
