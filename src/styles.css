@@ -1747,6 +1747,10 @@ button:focus-visible {
 @media only screen and (max-width: 600px) {}
 
 @media only screen and (max-width: 486px) {
+    :root {
+        --banner-title-font-size: 2.75rem;
+    }
+
     .grid_c-1-1 {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
