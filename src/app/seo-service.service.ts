@@ -15,7 +15,7 @@ export class SeoServiceService {
     },
     '/about-us': {
       title: 'About Jindal Speciality Chemicals | Legacy, Vision & Growth',
-      description: 'Discover the story of Jindal Speciality Chemicals – part of the Jindal Group with 3 decades of legacy in innovation, R&D, and sustainable chemical solutions.',
+      description: 'Discover the story of Jindal Speciality Chemicals - part of the Jindal Group with 3 decades of legacy in innovation, R&D, and sustainable chemical solutions.',
       keywords: 'Jindal Group, chemical company India, speciality chemical manufacturer, company history, Gujarat chemicals, innovation in chemistry',
     },
     '/vision-mission-values': {
