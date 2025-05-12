@@ -19,7 +19,7 @@ export class ExpertiseComponent implements OnInit {
       label: "Technologies",
     },
     {
-      id: "R & D",
+      id: "R&D",
       label: "R & D",
     },
   ];
