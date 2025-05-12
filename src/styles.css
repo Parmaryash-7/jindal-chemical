@@ -510,6 +510,11 @@ input:active {
 
 }
 
+.sidemenu_btn span{
+    background: linear-gradient(91deg, #f6aa1f, #ef4b4d, #e61463, #b3207f, #5a318c) !important;
+
+}
+
 .button.gradient_bg_one,
 
 .button.gradient_bg_two,

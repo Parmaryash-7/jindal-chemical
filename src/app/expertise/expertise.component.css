@@ -21,6 +21,10 @@
     line-height: 22px;
 }
 
+.ml-20{
+    margin-left: 20px;
+}
+
 section {
     position: relative;
 }
@@ -435,6 +439,24 @@ h2 {
 
 @media only screen and (max-width: 540px) {
 
+    .expertise-list-style {
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #2d2d2d73;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+    .tab-content {
+    padding: 0;
+}
+
+    .ml-20{
+        margin-left: 0;
+    }
     .shadow-inset {
         box-shadow: none;
     }
@@ -512,6 +534,7 @@ h2 {
     .news_item {
         background: transparent;
     }
+
 }
 
 .honeycomb {
