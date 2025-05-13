@@ -21,7 +21,7 @@
     line-height: 22px;
 }
 
-.ml-20{
+.ml-20 {
     margin-left: 20px;
 }
 
@@ -226,6 +226,7 @@ p.card-text {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
 .effect-hover {
@@ -440,23 +441,25 @@ h2 {
 @media only screen and (max-width: 540px) {
 
     .expertise-list-style {
-    padding: 5px 5px 5px 5px;
-    border: 1px solid #2d2d2d73;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1.5rem;
-}
-    .tab-content {
-    padding: 0;
-}
+        padding: 5px 5px 5px 5px;
+        border: 1px solid #2d2d2d73;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
 
-    .ml-20{
+    .tab-content {
+        padding: 0;
+    }
+
+    .ml-20 {
         margin-left: 0;
     }
+
     .shadow-inset {
         box-shadow: none;
     }
