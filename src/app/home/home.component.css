@@ -311,6 +311,12 @@
         grid-column: 1 / span 2;
     }
 
+    .submit_btn:hover {
+        color: #fff;
+        outline: 0;
+        text-decoration: unset;
+    }
+
     @media screen and (max-width:991px) {
         .section5 .img_container {
             /* justify-content: unset; */
