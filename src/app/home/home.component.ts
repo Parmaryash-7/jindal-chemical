@@ -62,6 +62,13 @@ export class HomeComponent implements OnInit {
     if (this.contactForm.invalid) {
       return;
     }
+
+    console.log(this.contactForm.value);
+    console.log(this.contactForm.value.name);
+
+    this.contactForm.reset();
+    this.contactForm.setErrors(null);
+    this.formSubmitted = false;
   }
 
 }

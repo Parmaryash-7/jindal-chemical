@@ -12,7 +12,7 @@ export class ContactComponent implements OnInit {
 
   contactForm = new FormGroup({
     name: new FormControl('', [Validators.required, Validators.minLength(3)]),
-    email: new FormControl('', [Validators.required, Validators.email]),
+    email: new FormControl('', [Validators.required, Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)]),
     mobile_no: new FormControl('', [
       Validators.required,
       Validators.pattern('^[0-9]{10}$')
@@ -37,6 +37,13 @@ export class ContactComponent implements OnInit {
     if (this.contactForm.invalid) {
       return;
     }
+
+    console.log(this.contactForm.value);
+    console.log(this.contactForm.value.name);
+
+    this.contactForm.reset();
+    this.contactForm.setErrors(null);
+    this.formSubmitted = false;
   }
 
 }
