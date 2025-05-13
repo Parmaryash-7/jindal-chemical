@@ -61,7 +61,7 @@ const routes: Routes = [
   {
     path: "gallery-2022",
     component: GalleryComponent
-  },
+  }
 ];
 
 @NgModule({
