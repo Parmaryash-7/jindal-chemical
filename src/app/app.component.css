@@ -1966,9 +1966,29 @@ footer ul.social-icons li a {
 
 }
 
-footer ul.social-icons li a:hover {
-   background: linear-gradient(90deg, #ffe7e2 31%, #ffd0b0 69%) !important;
+footer ul.social-icons li a {
+   position: relative;
+   overflow: hidden;
+   z-index: 0;
 }
+
+footer ul.social-icons li a::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(90deg, #ffe7e2 31%, #ffd0b0 69%);
+   z-index: -1;
+   opacity: 0;
+   transition: opacity 1s ease;
+}
+
+footer ul.social-icons li a:hover::before {
+   opacity: 1;
+}
+
 
 /* footer ul.social-icons:not(.small) li a {
    height: 58px;

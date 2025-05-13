@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   contactForm = new FormGroup({
     name: new FormControl('', [Validators.required, Validators.minLength(3)]),
-    email: new FormControl('', [Validators.required, Validators.email]),
+    email: new FormControl('', [Validators.required, Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)]),
     mobile_no: new FormControl('', [
       Validators.required,
       Validators.pattern('^[0-9]{10}$')
