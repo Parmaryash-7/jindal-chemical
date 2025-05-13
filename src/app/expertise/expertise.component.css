@@ -230,8 +230,12 @@ p.card-text {
 }
 
 .effect-hover {
-    -webkit-transition: all .7s ease-in .3s;
+    transition: all .7s ease-in .3s;
     width: 60px;
+}
+
+.effect-hover:hover {
+    transform: rotateY(-180deg);
 }
 
 .tabs {
