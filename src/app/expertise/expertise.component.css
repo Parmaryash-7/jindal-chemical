@@ -475,6 +475,7 @@ h2 {
 
     .mobile-600scale {
         display: block !important;
+        margin-bottom: 30px;
     }
 
     .top10 {
