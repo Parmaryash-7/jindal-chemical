@@ -16,6 +16,7 @@ import { VmvComponent } from './vmv/vmv.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NewsComponent } from './news/news.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
