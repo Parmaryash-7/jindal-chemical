@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, MinLengthValidator, Validators } from '@angular/forms';
 import Swiper, { Autoplay, Mousewheel, Navigation, Pagination } from "swiper";
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -29,7 +30,7 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
   }
@@ -63,8 +64,18 @@ export class HomeComponent implements OnInit {
       return;
     }
 
-    console.log(this.contactForm.value);
-    console.log(this.contactForm.value.name);
+    // console.log(this.contactForm.value);
+    // console.log(this.contactForm.value.name);
+
+    const httpOptions = {
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded\r\n",
+      },
+    };
+
+    this.http.post<any>("https://www.jindalspecialitychemicals.com/mail/contact_form.php", JSON.stringify(this.contactForm.value), httpOptions).subscribe((response: any) => {
+      console.log(response);
+    });
 
     this.contactForm.reset();
     this.contactForm.setErrors(null);
